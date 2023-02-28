@@ -4,17 +4,87 @@ import deposit from "../assets/icon/ฝากถอน.png";
 import slotgame from "../assets/icon/สล็อตเกม.png";
 import huay from "../assets/icon/หวย.png";
 import earnmoney from "../assets/icon/หารายได้.png";
+import giflink from "../assets/gif-link.gif";
 </script>
 
 <template>
-  <div
-    class="bg-red-400 h-screen w-full flex flex-col items-center justify-between"
-  >
+  <div class="h-screen w-full flex flex-col items-center justify-between">
+    <div
+      id="header"
+      class="w-full bg-emerald-500 flex flex-row justify-evenly items-center"
+    >
+      <div>
+        <img src="../assets/small/logo.png" class="w-48" />
+      </div>
+      <div>
+        <div class="flex flex-row">
+          <div>
+            <div class="flex flex-row bg-violet-700 py-1 px-2 rounded-tl-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-3 lg:w-4 mr-1 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                />
+              </svg>
+
+              <span class="text-white text-sm">0956236064</span>
+            </div>
+            <div class="flex flex-row bg-slate-100 items-center px-2 rounded-bl-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="black"
+                class="w-4 mr-1 stroke-violet-700 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
+              <span class="mb-0.5">0.00</span>
+            </div>
+          </div>
+          <div class="bg-violet-700 flex flex-col justify-center px-1 rounded-tr-md rounded-br-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       class="w-full h-full bg-emerald-500 flex flex-col justify-center items-center"
     >
       <div
-        class="w-full md:w-1/2 flex flex-row items-end justify-center "
+        class="w-full md:w-1/2 flex flex-row items-end justify-center"
         id="glass"
       >
         <div
@@ -75,9 +145,11 @@ import earnmoney from "../assets/icon/หารายได้.png";
         </div>
       </div>
 
-      <div class="w-full lg:w-1/2 mt-3 " id="button-deposit-withdraw">
+      <div class="w-full lg:w-1/2 mt-3" id="button-deposit-withdraw">
         <div class="flex flex-row items-center gap-2 px-2">
-          <button class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center border border-white hover:bg-green-600">
+          <button
+            class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center border border-white hover:bg-green-600"
+          >
             <span class="mr-1"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +168,9 @@ import earnmoney from "../assets/icon/หารายได้.png";
             </span>
             <span class="text-white font-semibold text-xl">ฝากเงิน</span>
           </button>
-          <button class="bg-red-500 w-full py-2  flex flex-row justify-center gap-1 lg:gap-2 items-center border border-white hover:bg-red-600">
+          <button
+            class="bg-red-500 w-full py-2 flex flex-row justify-center gap-1 lg:gap-2 items-center border border-white hover:bg-red-600"
+          >
             <span class="mr-1"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,12 +187,20 @@ import earnmoney from "../assets/icon/หารายได้.png";
                 />
               </svg>
             </span>
-            <span class="text-white font-semibold text-xl ">ถอนเงิน</span>
+            <span class="text-white font-semibold text-xl">ถอนเงิน</span>
           </button>
         </div>
       </div>
+
+      <div class="w-full flex flex-row justify-center">
+        <div class="w-full lg:w-1/2">
+          <img class="w-full" :src="giflink" alt="giflink" />
+        </div>
+      </div>
     </div>
-    <div class="w-full bg-emerald-600 flex flex-row justify-evenly items-center">
+    <div
+      class="w-full bg-emerald-600 flex flex-row justify-evenly items-center"
+    >
       <div
         class="flex flex-col items-center hover:bg-emerald-500 cursor-pointer pt-1"
         v-for="item in items"
