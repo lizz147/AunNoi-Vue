@@ -11,7 +11,7 @@ import giflink from "../assets/gif-link.gif";
   <div class="min-h-screen h-auto w-full flex flex-col relative">
     <div
       id="header"
-      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-50"
+      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-40"
     >
       <div>
         <img src="../assets/small/logo.png" class="w-48" />
@@ -353,7 +353,7 @@ import giflink from "../assets/gif-link.gif";
     <div
       v-show="isVisible"
       id="center-popup"
-      class="fade w-11/12 absolute top-36 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md"
+      class="fade w-11/12 absolute top-36 lg:top-42 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md z-50"
     >
       <div class="flex flex-col">
         <div
