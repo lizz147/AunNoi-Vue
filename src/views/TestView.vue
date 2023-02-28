@@ -8,18 +8,18 @@ import giflink from "../assets/gif-link.gif";
 </script>
 
 <template>
-  <div class="h-screen w-full flex flex-col items-center justify-between">
+  <div class="min-h-screen h-auto w-full flex flex-col relative">
     <div
       id="header"
-      class="w-full bg-emerald-500 flex flex-row justify-evenly items-center"
+      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-50"
     >
       <div>
         <img src="../assets/small/logo.png" class="w-48" />
       </div>
-      <div>
+      <div class="flex flex-row items-center">
         <div class="flex flex-row">
           <div>
-            <div class="flex flex-row bg-violet-700 py-1 px-2 rounded-tl-md">
+            <div class="flex flex-row bg-green-700 py-1 px-2 rounded-tl-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -37,14 +37,16 @@ import giflink from "../assets/gif-link.gif";
 
               <span class="text-white text-sm">0956236064</span>
             </div>
-            <div class="flex flex-row bg-slate-100 items-center px-2 rounded-bl-md">
+            <div
+              class="flex flex-row bg-slate-100 items-center px-2 rounded-bl-md"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="black"
-                class="w-4 mr-1 stroke-violet-700 stroke-2"
+                class="w-4 mr-1 stroke-green-700 stroke-2"
               >
                 <path
                   stroke-linecap="round"
@@ -56,7 +58,9 @@ import giflink from "../assets/gif-link.gif";
               <span class="mb-0.5">0.00</span>
             </div>
           </div>
-          <div class="bg-violet-700 flex flex-col justify-center px-1 rounded-tr-md rounded-br-md">
+          <div
+            class="bg-green-700 flex flex-col justify-center px-1 rounded-tr-md rounded-br-md"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -78,10 +82,29 @@ import giflink from "../assets/gif-link.gif";
             </svg>
           </div>
         </div>
+        <div
+          @click="toggleVisible"
+          class="w-12 h-12 bg-slate-100 rounded-full ml-2 flex flex-col items-center justify-center hover:bg-slate-200 cursor-pointer transition-all duration-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 stroke-green-700 stroke-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+            />
+          </svg>
+        </div>
       </div>
     </div>
     <div
-      class="w-full h-full bg-emerald-500 flex flex-col justify-center items-center"
+      class="w-full h-full bg-emerald-500 flex flex-col justify-start pt-7 items-center"
     >
       <div
         class="w-full md:w-1/2 flex flex-row items-end justify-center"
@@ -192,9 +215,126 @@ import giflink from "../assets/gif-link.gif";
         </div>
       </div>
 
-      <div class="w-full flex flex-row justify-center">
+      <div class="w-full flex flex-row justify-center" id="gift">
         <div class="w-full lg:w-1/2">
           <img class="w-full" :src="giflink" alt="giflink" />
+        </div>
+      </div>
+
+      <div
+        id="menu"
+        class="h-auto w-full lg:w-1/2 flex flex-row mb-4 bg-slate-900"
+      >
+        <div class="w-3/12 pt-4">
+          <div class="flex flex-col items-center">
+            <div
+              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
+            >
+              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
+              <span class="text-white text-sm">คาสิโน</span>
+            </div>
+            <div
+              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
+            >
+              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
+              <span class="text-white text-sm">คาสิโน</span>
+            </div>
+            <div
+              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
+            >
+              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
+              <span class="text-white text-sm">คาสิโน</span>
+            </div>
+            <div
+              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
+            >
+              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
+              <span class="text-white text-sm">คาสิโน</span>
+            </div>
+            <div
+              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
+            >
+              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
+              <span class="text-white text-sm">คาสิโน</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-9/12 bg-gray-800 h-full mt-4 rounded-md py-2 px-3">
+          <div class="flex flex-col items-center">
+            <span class="text-white text-center text-sm lg:text-md mb-3">
+              Casino & Slot Online เกมส์และโต้ะเกมส์สดมากที่สุดในไทย
+            </span>
+            <div class="flex flex-row gap-2">
+              <div class="flex flex-col items-center cursor-pointer">
+                <img
+                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
+                  src="../assets/carousel/s1.png"
+                  alt="random"
+                />
+                <span class="mt-1 text-white text-center text-sm">สุ่มเกม</span>
+              </div>
+              <div class="flex flex-col items-center cursor-pointer">
+                <img
+                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
+                  src="../assets/carousel/s1.png"
+                  alt="random"
+                />
+                <span class="mt-1 text-white text-center text-sm"
+                  >SA Gaming</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col w-full mt-3 mb-3">
+              <img
+                class="rounded-lg object-cover w-auto h-56"
+                src="../assets/carousel/s2.png"
+                alt=""
+              />
+              <span class="mt-1 text-white text-center text-sm"
+                >ASIA Gaming</span
+              >
+            </div>
+            <div class="flex flex-row gap-2 mb-2">
+              <div class="flex flex-col items-center cursor-pointer">
+                <img
+                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
+                  src="../assets/carousel/s1.png"
+                  alt="random"
+                />
+                <span class="mt-1 text-white text-center text-sm">WB</span>
+              </div>
+              <div class="flex flex-col items-center cursor-pointer">
+                <img
+                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
+                  src="../assets/carousel/s1.png"
+                  alt="random"
+                />
+                <span class="mt-1 text-white text-center text-sm"
+                  >AMB Poker</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row gap-2 mb-2">
+              <div class="flex flex-col items-center cursor-pointer">
+                <img
+                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
+                  src="../assets/carousel/s1.png"
+                  alt="random"
+                />
+                <span class="mt-1 text-white text-center text-sm">สุ่มเกม</span>
+              </div>
+              <div class="flex flex-col items-center cursor-pointer">
+                <img
+                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
+                  src="../assets/carousel/s1.png"
+                  alt="random"
+                />
+                <span class="mt-1 text-white text-center text-sm"
+                  >SA Gaming</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -209,6 +349,69 @@ import giflink from "../assets/gif-link.gif";
         <p class="text-white">{{ item.name }}</p>
       </div>
     </div>
+
+    <div
+      v-show="isVisible"
+      id="center-popup"
+      class="fade w-11/12 absolute top-36 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md"
+    >
+      <div class="flex flex-col">
+        <div
+          class="flex flex-row justify-between py-5 p-3 bg-emerald-500 rounded-t-md"
+        >
+          <span class="text-white text-lg">เลือกข่องทางติดต่อเรา</span>
+          <svg
+            @click="toggleVisible"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 cursor-pointer stroke-slate-800 hover:stroke-white transition-all duration-200"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div
+          class="bg-white flex flex-row justify-center gap-3 py-5 rounded-b-md"
+        >
+          <div
+            class="flex flex-col items-center border border-emerald-500 p-4 px-5 cursor-pointer transiton-all hover:bg-green-200 duration-300"
+          >
+            <span class="text-green-700">ติดต่อผ่านไลท์</span>
+            <img
+              src="../assets/small/LINE_logo.svg.png"
+              alt="Line"
+              width="60"
+            />
+          </div>
+          <div
+            class="flex flex-col items-center border border-red-500 p-4 cursor-pointer transiton-all hover:bg-red-200 duration-300"
+          >
+            <span class="text-red-700 mb-1">แชทสดกับพนักงาน</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              width="50"
+              class="stroke-red-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -216,6 +419,7 @@ import giflink from "../assets/gif-link.gif";
 export default {
   data() {
     return {
+      isVisible: false,
       items: [
         {
           name: "กีฬาคาสิโน",
@@ -239,6 +443,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    toggleVisible() {
+      this.isVisible = !this.isVisible;
+    },
   },
 };
 </script>
