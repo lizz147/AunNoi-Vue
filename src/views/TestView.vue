@@ -339,13 +339,13 @@ import giflink from "../assets/gif-link.gif";
       </div>
     </div>
     <div
-      class="w-full bg-emerald-600 flex flex-row justify-evenly items-center"
+      class="w-full bg-emerald-600 flex flex-row justify-evenly items-center sticky bottom-0"
     >
       <div
         class="flex flex-col items-center hover:bg-emerald-500 cursor-pointer pt-1"
         v-for="item in items"
       >
-        <img :src="item.img" alt="กีฟาคาสิโน" class="w-1/2 lg:w-3/12" />
+        <img :src="item.img" alt="กีฟาคาสิโน" class="w-1/2 lg:w-2/12" />
         <p class="text-white">{{ item.name }}</p>
       </div>
     </div>
