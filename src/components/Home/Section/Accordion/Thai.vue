@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center w-full">
     <div
       @click="isVisible = !isVisible"
-      class="w-full px-4 bg-amber-300 hover:bg-amber-400 cursor-pointer rounded-lg"
+      class="w-full px-4 bg-amber-300 hover:bg-amber-400 cursor-pointer rounded-lg transition-all duration-300"
     >
       <div class="flex flex-row justify-start items-center w-full py-3">
         <svg
@@ -66,34 +66,34 @@
               <div class="w-full flex flex-col items-center rounded">
                 <span
                   class="py-1 bg-yellow-200 w-full rounded rounded-b-none text-center"
-                  >3ตัวหน้า</span
+                  >3 ตัวหน้า</span
                 >
                 <h6
                   class="py-2 bg-white w-full rounded rounded-t-none text-center"
                 >
-                  664,195
+                  577,919
                 </h6>
               </div>
               <div class="w-full flex flex-col items-center rounded">
                 <span
                   class="py-1 bg-yellow-200 w-full rounded rounded-b-none text-center"
-                  >3ตัวหน้า</span
+                  >3 ตัวล่าง</span
                 >
                 <h6
                   class="py-2 bg-white w-full rounded rounded-t-none text-center"
                 >
-                  664,195
+                  748,984
                 </h6>
               </div>
               <div class="w-full flex flex-col items-center rounded">
                 <span
                   class="py-1 bg-yellow-200 w-full rounded rounded-b-none text-center"
-                  >3ตัวหน้า</span
+                  >2 ตัวล่าง</span
                 >
                 <h6
                   class="py-2 bg-white w-full rounded rounded-t-none text-center"
                 >
-                  664,195
+                  55
                 </h6>
               </div>
             </div>

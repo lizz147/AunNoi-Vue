@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center w-full">
     <div
       @click="isVisible = !isVisible"
-      class="w-full px-4 bg-slate-200 hover:bg-slate-300 cursor-pointer rounded-lg"
+      class="w-full px-4 bg-slate-300 hover:bg-slate-400 cursor-pointer rounded-lg transition-all duration-300"
     >
       <div class="flex flex-row justify-start items-center w-full py-3">
         <svg
@@ -54,28 +54,28 @@
       </div>
       <div v-show="isVisible" class="rounded fade">
         <div class="mb-2">
-          <div class="flex flex-row w-full gap-3">
+          <div class="flex flex-row w-full gap-3 flex-wrap">
             <div class="w-full flex flex-col items-center rounded">
               <span
-                class="py-1 bg-slate-300 w-full rounded rounded-b-none text-center"
-                >3ตัวหน้า</span
+                class="py-2 bg-slate-200 w-full rounded rounded-b-none text-center"
+                >หวยหุ้นดาวน์โจน</span
               >
-              <h6
-                class="py-2 bg-white w-full rounded rounded-t-none text-center"
-              >
-                664,195
-              </h6>
-            </div>
-            <div class="w-full flex flex-col items-center rounded">
-              <span
-                class="py-1 bg-slate-300 w-full rounded rounded-b-none text-center"
-                >3ตัวหน้า</span
-              >
-              <h6
-                class="py-2 bg-white w-full rounded rounded-t-none text-center"
-              >
-                664,195
-              </h6>
+              <div class="bg-white w-full flex flex-col">
+                <div class="grid grid-cols-2">
+                  <div
+                    class="text-center py-1 pt-2 border-r border-b border-gray-400"
+                  >
+                    3 ตัวบน
+                  </div>
+                  <div class="text-center py-1 pt-2 border-b border-gray-400">
+                    2 ตัวล่าง
+                  </div>
+                  <div class="text-center py-1 pt-2 border-r border-gray-400">
+                    xxx
+                  </div>
+                  <div class="text-center py-1 pt-2 rounded-br">xxx</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

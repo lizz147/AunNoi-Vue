@@ -24,7 +24,7 @@ import YeegeeVip from "./Accordion/YeegeeVip.vue";
       </div>
     </div>
     <div class="mb-3"><Yeegee /></div>
-    <div class="mb-3"><Laos /></div>
+    <div class="mb-3"><Laos/></div>
     <div class="mb-3"><Vitenam /></div>
     <div class="mb-3"><Inter /></div>
     <div class="mb-3"><Share /></div>

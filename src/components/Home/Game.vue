@@ -35,6 +35,14 @@ export default {
           name: "Joker Gaming",
           img: jokergame,
         },
+        {
+          name: "Joker Gaming",
+          img: jokergame,
+        },
+        {
+          name: "Joker Gaming",
+          img: jokergame,
+        },
       ],
     };
   },
@@ -50,7 +58,7 @@ export default {
 };
 </script>
 <template>
-  <div class="px-5 my-3">
+  <div class="px-4 lg:px-20 my-5 lg:my-10">
     <swiper
       :slidesPerView="2"
       :spaceBetween="5"
@@ -85,7 +93,7 @@ export default {
     >
       <swiper-slide
         v-for="item in items"
-        class="bg-indigo-800 w-fit flex flex-col items-center rounded-xl"
+        class="bg-indigo-900 w-fit flex flex-col items-center rounded-xl transition-all hover:bg-violet-900 duration-300 cursor-pointer"
       >
         <img
           :src="item.img"
@@ -94,7 +102,7 @@ export default {
           height="300"
           class="rounded-xl rounded-b-none"
         />
-        <p class="text-white py-0.5">{{item.name}}</p>
+        <p class="text-white py-0.5">{{ item.name }}</p>
       </swiper-slide>
     </swiper>
   </div>
