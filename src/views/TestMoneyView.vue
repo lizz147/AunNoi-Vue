@@ -249,71 +249,52 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
             หน้าหลัก
           </router-link>
         </div>
-        <div class="bg-slate-200 shadow py-2 px-2 pt-3 rounded-md mb-3">
-          <div class="flex flex-row items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 mr-1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
-              />
-            </svg>
 
-            <span class="font-semibold"> สถานะ ฝาก-ถอนเงิน </span>
-          </div>
-        </div>
         <div class="bg-slate-100 shadow-sm rounded-md py-2">
           <div class="flex flex-col">
             <div class="w-full flex flex-row gap-2 mb-3">
-                <button
-                  class="py-3 bg-yellow-400 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-yellow-500 duration-300"
-                  @click="toggleisNowStateTrue"
+              <button
+                class="py-3 bg-yellow-400 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-yellow-500 duration-300"
+                @click="toggleisNowStateTrue"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
-                    />
-                  </svg>
-                  <span>รายการแจ้งฝาก / ถอน</span>
-                </button>
-            
-                <button
-                  class="py-3 bg-violet-500 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-violet-600 duration-300"
-                  @click="toggleisNowStateFalse"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 fill-white stroke-white"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-                    />
-                  </svg>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                  />
+                </svg>
+                <span>รายการแจ้งฝาก / ถอน</span>
+              </button>
 
-                  <span class="text-white">รายงานการเงิน</span>
-                </button>
+              <button
+                class="py-3 bg-violet-500 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-violet-600 duration-300"
+                @click="toggleisNowStateFalse"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 fill-white stroke-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+                  />
+                </svg>
+
+                <span class="text-white">รายงานการเงิน</span>
+              </button>
             </div>
             <div
               class="w-full border bg-slate-100 border-red-700 rounded-md flex flex-row justify-center py-2 items-center transition-all duration-300 hover:bg-red-500 cursor-pointer group"
@@ -399,31 +380,53 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               </div>
             </div>
 
-            <div class="flex flex-row w-full mt-5" v-show="!isNowState">
-              <div
-                class="w-full py-2 md:py-3 bg-violet-700 flex flex-row justify-center rounded-t-md"
-              >
-                <span class="text-white">วันนี้</span>
-              </div>
-              <div
-                class="w-full py-2 md:py-3 bg-gray-400 flex flex-row justify-center rounded-t-md items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 mr-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
-                  />
-                </svg>
+            <div class="flex flex-col w-full mt-5" v-show="!isNowState">
+              <div class="bg-slate-200 shadow py-2 px-2 pt-3 rounded-md mb-3">
+                <div class="flex flex-row items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5"
+                    />
+                  </svg>
 
-                <span class="text-black"> ก่อนหน้า</span>
+                  <span class="font-semibold"> รายงานการเงิน </span>
+                </div>
+              </div>
+              <div class="flex flex-row">
+                <div
+                  class="w-full py-2 md:py-3 bg-violet-700 flex flex-row justify-center rounded-t-md"
+                >
+                  <span class="text-white">วันนี้</span>
+                </div>
+                <div
+                  class="w-full py-2 md:py-3 bg-gray-400 flex flex-row justify-center rounded-t-md items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+                    />
+                  </svg>
+
+                  <span class="text-black"> ก่อนหน้า</span>
+                </div>
               </div>
             </div>
           </div>
