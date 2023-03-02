@@ -9,6 +9,7 @@ import RuleView from "../views/RuleView.vue";
 import TestView from "../views/TestView.vue";
 import TestProfileView from "../views/TestProfileView.vue";
 import TestMoneyView from "../views/TestMoneyView.vue";
+import TestMoneyReport from "../views/TestMoneyReport.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -62,6 +63,11 @@ const router = createRouter({
       path: "/test/moneylist",
       name: "testmoneylist",
       component: TestMoneyView,
+    },
+    {
+      path: "/test/moneylist/report",
+      name: "testmoneylistreport",
+      component: TestMoneyReport,
     },
   ],
 });
