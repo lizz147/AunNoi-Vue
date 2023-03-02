@@ -246,7 +246,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               />
             </svg>
 
-            ย้อนกลับ
+            หน้าหลัก
           </router-link>
         </div>
         <div class="bg-slate-200 shadow py-2 px-2 pt-3 rounded-md mb-3">
@@ -257,147 +257,100 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-5 mr-1 stroke-2"
+              class="w-6 mr-1"
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
               />
             </svg>
-            <span class="font-semibold"> ตั่งค่าผู้ใช้ </span>
+
+            <span class="font-semibold"> สถานะ ฝาก-ถอนเงิน </span>
           </div>
         </div>
         <div class="bg-slate-100 shadow-sm rounded-md py-2">
           <div class="flex flex-col">
-            <div class="flex flex-row mb-3 px-9">
+            <div
+              class="w-full border bg-slate-100 border-red-700 rounded-md flex flex-row justify-center py-2 items-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="white"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-5 mr-1"
+                class="w-8 lg:w-10 mr-1 stroke-2 stroke-red-700"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                  d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
                 />
               </svg>
-
-              <span class="text-lg">โปรไฟล์</span>
-            </div>
-            <div class="flex flex-row justify-center items-center mb-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-28"
+              <span class="text-base lg:text-lg text-red-700 font-medium"
+                >แจ้งปัญหาฝาก / ถอน</span
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
             </div>
-            <div class="flex flex-col mb-3">
-              <form class="w-full px-9" action="#" method="post">
-                <div class="mb-3 flex flex-col">
-                  <label class="mb-2" for="username">ชื่อผู้ใช้งาน</label>
-                  <input
-                    disabled
-                    class="py-2 border bg-slate-300 border-white rounded-md px-3 outline-none focus:border-blue-400"
-                    type="text"
-                    value="0956236064"
-                    placeholder="กรอกเบอร์ชื่อผู้ใช้งาน"
+            <div class="w-full grid grid-cols-3 mt-5">
+              <div
+                class="bg-blue-500 hover:bg-blue-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center text-white rounded-tl-lg rounded-bl-lg py-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
                   />
-                </div>
-                <div class="mb-3 flex flex-col">
-                  <label class="mb-2" for="username">เบอร์โทรศัพท์</label>
-                  <input
-                    disabled
-                    class="py-2 border bg-slate-300 border-white rounded-md px-3 outline-none focus:border-blue-400"
-                    type="text"
-                    value="0956236064"
-                    placeholder="กรอกเบอร์เบอร์โทรศัพท์"
+                </svg>
+                <span class="text-base lg:text-lg mt-0 lg:mt-1">ทั้งหมด</span>
+              </div>
+              <div
+                class="bg-emerald-500 hover:bg-emerald-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center py-2 text-white group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-1 stroke-emerald-500 group-hover:stroke-emerald-600 transition-all duration-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 10.5v6m3-3H9m4.06-7.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
                   />
-                </div>
-
-                <div class="flex flex-col mb-3">
-                  <span class="text-lg font-semibold mb-1"
-                    >ยืนยันเบอร์โทรศัพท์</span
-                  >
-                  <span class="text-green-700">ยืนยันแล้ว</span>
-                </div>
-              </form>
-            </div>
-
-            <div class="flex flex-col mb-3 px-9">
-              <div class="flex flex-row">
+                </svg>
+                <span class="text-base lg:text-lg mt-0 lg:mt-1">ฝาก</span>
+              </div>
+              <div
+                class="bg-red-500 hover:bg-red-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center py-2 text-white rounded-tr-lg rounded-br-lg"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-5 mr-1"
+                  class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-1"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    d="M15 13.5H9m4.06-7.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
                   />
                 </svg>
 
-                <span class="text-lg">จัดการรหัสผ่าน</span>
+                <span class="text-base lg:text-lg mt-0 lg:mt-1">ถอน</span>
               </div>
-              <span class="text-sm text-red-700"
-                >*หมายเหตุ: กรณีจำรหัสผ่านปัจจุบันไม่ได้
-                กรุณาติดต่อแอดมินทางไลท์</span
-              >
-            </div>
-
-            <div class="flex flex-col mb-3">
-              <form class="w-full px-9" action="#" method="post">
-                <div class="mb-3 flex flex-col">
-                  <label class="mb-2" for="username">รหัสผ่านเดิม</label>
-                  <input
-                    class="py-2 border bg-slate-50 border-gray-300 rounded-md px-3 outline-none focus:border-blue-400"
-                    type="password"
-                  />
-                </div>
-                <div class="mb-3 flex flex-col">
-                  <label class="mb-2" for="username">รหัสผ่านใหม่</label>
-                  <input
-                    class="py-2 border bg-slate-50 border-gray-300 rounded-md px-3 outline-none focus:border-blue-400"
-                    type="password"
-                  />
-                </div>
-                <div class="mb-3 flex flex-col">
-                  <label class="mb-2" for="username">ยืนยันรหัสผ่านใหม่</label>
-                  <input
-                    class="py-2 border bg-slate-50 border-gray-300 rounded-md px-3 outline-none focus:border-blue-400"
-                    type="password"
-                  />
-                </div>
-
-                <div class="w-full">
-                  <button
-                    class="bg-violet-500 w-full py-2 rounded-md hover:bg-violet-600 transition-all duration-300 hover:text-white"
-                  >
-                    เปลื่ยนรหัสผ่าน
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>

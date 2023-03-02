@@ -8,6 +8,7 @@ import ContactView from "../views/ContactView.vue";
 import RuleView from "../views/RuleView.vue";
 import TestView from "../views/TestView.vue";
 import TestProfileView from "../views/TestProfileView.vue";
+import TestMoneyView from "../views/TestMoneyView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,9 +54,14 @@ const router = createRouter({
       component: TestView,
     },
     {
-      path: "/testprofile",
+      path: "/test/profile",
       name: "testprofile",
       component: TestProfileView,
+    },
+    {
+      path: "/test/moneylist",
+      name: "testmoneylist",
+      component: TestMoneyView,
     },
   ],
 });

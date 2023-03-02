@@ -5,10 +5,11 @@ import slotgame from "../assets/icon/สล็อตเกม.png";
 import huay from "../assets/icon/หวย.png";
 import earnmoney from "../assets/icon/หารายได้.png";
 import giflink from "../assets/gif-link.gif";
+import StickyBottom from "../components/Test/StickyBottom.vue";
 </script>
 
 <template>
-  <div class="min-h-screen h-auto w-full flex flex-col relative">
+  <div class="min-h-screen h-auto w-full flex flex-col relative bg-emerald-700">
     <div
       id="header"
       class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-40"
@@ -220,62 +221,71 @@ import giflink from "../assets/gif-link.gif";
       </div>
     </div>
     <div
-      class="w-full h-full bg-emerald-500 flex flex-col justify-start pt-7 items-center"
+      class="w-full h-full bg-gray-900 flex flex-col justify-start pt-7 items-center py-24"
     >
       <div
         class="w-full md:w-1/2 flex flex-row items-end justify-center"
         id="glass"
       >
-        <div
-          class="w-52 h-52 lg:w-80 lg:h-80 flex flex-col justify-center items-center rounded-full shadow-lg relative"
-          id="glassmorphism"
-        >
-          <div class="flex flex-col justify-center items-center">
-            <span class="flex flex-row mb-1"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 mr-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span class="text-base lg:text-xl">ยอดเงินคงเหลือ</span></span
-            >
-            <span
-              ><h5 class="text-white text-3xl tracking-widest">0.00</h5></span
-            >
-          </div>
-
-          <div class="absolute right-0 bottom-0 lg:right-1 lg:bottom-10">
-            <div
-              class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center hover:bg-slate-200 transition-all duration-200"
-            >
-              <router-link to="/testprofile">
-                <svg
+        <routerLink class="no-underline text-black" to="/test/moneylist">
+          <div
+            class="w-52 h-52 lg:w-80 lg:h-80 flex flex-col justify-center items-center rounded-full shadow-lg relative transiton-all cursor-pointer duration-300 group"
+            id="glassmorphism"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <span class="flex flex-row mb-1"
+                ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-7 hover:stroke-2 cursor-pointer transition-all duration-200 stroke-gray-900"
+                  class="w-6 mr-1 group-hover:stroke-blue-700 transition-all duration-200"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                    d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-              </router-link>
+                <span
+                  class="text-base lg:text-xl group-hover:text-blue-700 transition-all duration-200"
+                  >ยอดเงินคงเหลือ</span
+                ></span
+              >
+              <span
+                ><h5
+                  class="text-white text-3xl tracking-widest group-hover:text-blue-600 transition-all duration-200"
+                >
+                  0.00
+                </h5></span
+              >
+            </div>
+
+            <div class="absolute right-0 bottom-0 lg:right-1 lg:bottom-10">
+              <div
+                class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center hover:bg-slate-200 transition-all duration-200"
+              >
+                <router-link to="/test/profile">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-7 hover:stroke-2 cursor-pointer transition-all duration-200 stroke-gray-900"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                    />
+                  </svg>
+                </router-link>
+              </div>
             </div>
           </div>
-        </div>
+        </routerLink>
         <div
           class="w-28 h-28 lg:w-48 lg:h-48 flex flex-col justify-center items-center rounded-full shadow-lg"
           id="glassmorphism"
@@ -477,61 +487,8 @@ import giflink from "../assets/gif-link.gif";
         </div>
       </div>
     </div>
-    <div
-      class="w-full shadow-md flex flex-row justify-evenly items-end sticky bottom-0 max-h-[50px] md:max-h-[70px] lg:max-h-[80px] xl:max-h-[100px]"
-      style="background-color: rgba(0, 0, 0, 0.5);"
-    >
-      <div
-        class="flex flex-col items-center  w-full cursor-pointer pt-1"
-      >
-        <img
-          src="../assets/icon/กีฬาคาสิโน.png"
-          alt="กีฟาคาสิโน"
-          class="w-1/2 lg:w-3/12"
-        />
-        <p class="text-white">กีฟาคาสิโน</p>
-      </div>
-      <div
-        class="flex flex-col items-center  w-full cursor-pointer pt-1"
-      >
-        <img
-          src="../assets/icon/สล็อตเกม.png"
-          alt="กีฟาคาสิโน"
-          class="w-1/2 lg:w-3/12"
-        />
-        <p class="text-white">สล็อตเกม</p>
-      </div>
-      <div
-        class="flex flex-col items-center  w-full cursor-pointer pt-1 relative"
-      >
-        <img
-          src="../assets/icon/ฝากถอน.png"
-          alt="กีฟาคาสิโน"
-          class="w-3/4 md:w-7/12 lg:w-6/12"
-        />
-        <p class="text-white">ฝากถอน</p>
-      </div>
-      <div
-        class="flex flex-col items-center  w-full cursor-pointer pt-1"
-      >
-        <img
-          src="../assets/icon/หวย.png"
-          alt="กีฟาคาสิโน"
-          class="w-1/2 lg:w-3/12"
-        />
-        <p class="text-white">หวย</p>
-      </div>
-      <div
-        class="flex flex-col items-center  w-full cursor-pointer pt-1"
-      >
-        <img
-          src="../assets/icon/หารายได้.png"
-          alt="กีฟาคาสิโน"
-          class="w-1/2 lg:w-3/12"
-        />
-        <p class="text-white">หารายได้</p>
-      </div>
-    </div>
+
+    <StickyBottom />
 
     <div
       v-show="isContectVisible"
@@ -604,6 +561,7 @@ export default {
     return {
       isContectVisible: false,
       isMenuDropDownVisible: false,
+      isMenuMoneyListVisible: false,
       items: [
         {
           name: "กีฬาคาสิโน",
@@ -634,6 +592,9 @@ export default {
     },
     toggleMenuDropDownVisible() {
       this.isMenuDropDownVisible = !this.isMenuDropDownVisible;
+    },
+    toggleMoneyListVisible() {
+      this.isMoneyListVisible = !this.isMoneyListVisible;
     },
   },
 };
