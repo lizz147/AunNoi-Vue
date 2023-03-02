@@ -337,12 +337,13 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                     />
                   </svg>
 
-                  <span class="font-semibold"> สถานะ ฝาก/ถอนเงิน </span>
+                  <span class="font-semibold"> สถานะ {{ message }} </span>
                 </div>
               </div>
               <div class="w-full grid grid-cols-3">
                 <div
                   class="bg-blue-500 hover:bg-blue-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center text-white rounded-tl-lg rounded-bl-lg py-2"
+                  @click="changeMessage1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -362,6 +363,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                 </div>
                 <div
                   class="bg-emerald-500 hover:bg-emerald-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center py-2 text-white group"
+                  @click="changeMessage2"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -370,6 +372,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                     stroke-width="1.5"
                     stroke="currentColor"
                     class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 mr-1 stroke-emerald-500 group-hover:stroke-emerald-600 transition-all duration-300"
+                    @click="changeMessage2"
                   >
                     <path
                       stroke-linecap="round"
@@ -381,6 +384,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                 </div>
                 <div
                   class="bg-red-500 hover:bg-red-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center py-2 text-white rounded-tr-lg rounded-br-lg"
+                  @click="changeMessage3"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -524,6 +528,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
 export default {
   data() {
     return {
+      message: "ฝาก / ถอนเงิน",
       isNowState: true,
       isContectVisible: false,
       isMenuDropDownVisible: false,
@@ -563,6 +568,15 @@ export default {
     },
     toggleisNowStateFalse() {
       this.isNowState = false;
+    },
+    changeMessage1() {
+      this.message = "ฝาก / ถอนเงิน";
+    },
+    changeMessage2() {
+      this.message = "ฝาก";
+    },
+    changeMessage3() {
+      this.message = "ถอน";
     },
   },
 };

@@ -504,7 +504,13 @@ export default {
       this.isContectVisible = !this.isContectVisible;
     },
     toggleMenuDropDownVisible() {
-      this.isMenuDropDownVisible = !this.isMenuDropDownVisible;
+      this.mess = !this.isMenuDropDownVisible;
+    },changeMessage1() {
+      this.message = "ฝาก / ถอนเงิน"
+    },changeMessage2() {
+      this.message = "ฝาก"
+    },changeMessage2() {
+      this.message = "ถอน"
     },
   },
 };
