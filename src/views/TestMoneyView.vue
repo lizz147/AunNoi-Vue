@@ -266,18 +266,15 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               />
             </svg>
 
-            <span class="font-semibold"> สถานะ {{ reportState }} </span>
+            <span class="font-semibold"> สถานะ ฝาก-ถอนเงิน </span>
           </div>
         </div>
         <div class="bg-slate-100 shadow-sm rounded-md py-2">
           <div class="flex flex-col">
             <div class="w-full flex flex-row gap-2 mb-3">
-              <router-link
-                to="/test/moneylist/report"
-                class="no-underline flex flex-row text-white w-full"
-              >
                 <button
                   class="py-3 bg-yellow-400 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-yellow-500 duration-300"
+                  @click="toggleisNowState"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -293,30 +290,30 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                       d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
                     />
                   </svg>
-                  <span >รายการแจ้งฝาก / ถอน</span>
+                  <span>รายการแจ้งฝาก / ถอน</span>
                 </button>
-              </router-link>
-              <button
-                class="py-3 bg-violet-500 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2
-                transiton-all hover:bg-violet-600 duration-300"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 fill-white stroke-white"
+            
+                <button
+                  class="py-3 bg-violet-500 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-violet-600 duration-300"
+                  @click="toggleisNowState"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-                  />
-                </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 fill-white stroke-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+                    />
+                  </svg>
 
-                <span class="text-white">รายงานการเงิน</span>
-              </button>
+                  <span class="text-white">รายงานการเงิน</span>
+                </button>
             </div>
             <div
               class="w-full border bg-slate-100 border-red-700 rounded-md flex flex-row justify-center py-2 items-center transition-all duration-300 hover:bg-red-500 cursor-pointer group"
@@ -341,10 +338,9 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                 >แจ้งปัญหาฝาก / ถอน</span
               >
             </div>
-            <div class="w-full grid grid-cols-3 mt-5">
+            <div class="w-full grid grid-cols-3 mt-5" v-show="isNowState">
               <div
                 class="bg-blue-500 hover:bg-blue-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center text-white rounded-tl-lg rounded-bl-lg py-2"
-                @click="changeReportState1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +360,6 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               </div>
               <div
                 class="bg-emerald-500 hover:bg-emerald-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center py-2 text-white group"
-                @click="changeReportState2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +379,6 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               </div>
               <div
                 class="bg-red-500 hover:bg-red-600 cursor-pointer transition-all duration-300 flex flex-row justify-center items-center py-2 text-white rounded-tr-lg rounded-br-lg"
-                @click="changeReportState3"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -404,6 +398,34 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                 <span class="text-base lg:text-lg mt-0 lg:mt-1">ถอน</span>
               </div>
             </div>
+
+            <div class="flex flex-row w-full mt-5" v-show="!isNowState">
+              <div
+                class="w-full py-2 md:py-3 bg-violet-700 flex flex-row justify-center rounded-t-md"
+              >
+                <span class="text-white">วันนี้</span>
+              </div>
+              <div
+                class="w-full py-2 md:py-3 bg-gray-400 flex flex-row justify-center rounded-t-md items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 mr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+                  />
+                </svg>
+
+                <span class="text-black"> ก่อนหน้า</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -412,7 +434,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
     <div
       v-show="isContectVisible"
       id="center-popup"
-      class="fade w-11/12 lg:w-1/2 absolute top-48 lg:top-56 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md z-50"
+      class="fade w-11/12 lg:w-1/2 absolute top-56 lg:top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md z-50"
     >
       <div class="flex flex-col h-full">
         <div
@@ -477,7 +499,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
 export default {
   data() {
     return {
-      reportState:"ฝาก-ถอนเงิน",
+      isNowState: true,
       isContectVisible: false,
       isMenuDropDownVisible: false,
       items: [
@@ -511,15 +533,9 @@ export default {
     toggleMenuDropDownVisible() {
       this.isMenuDropDownVisible = !this.isMenuDropDownVisible;
     },
-    changeReportState1(){
-      this.reportState="ฝาก-ถอนเงิน"
+    toggleisNowState() {
+      this.isNowState = !this.isNowState;
     },
-    changeReportState2(){
-      this.reportState="ฝาก"
-    },
-    changeReportState3(){
-      this.reportState="ถอนเงิน"
-    }
   },
 };
 </script>
