@@ -274,7 +274,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
             <div class="w-full flex flex-row gap-2 mb-3">
                 <button
                   class="py-3 bg-yellow-400 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-yellow-500 duration-300"
-                  @click="toggleisNowState"
+                  @click="toggleisNowStateTrue"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -295,7 +295,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
             
                 <button
                   class="py-3 bg-violet-500 rounded-md px-1 w-full flex flex-col md:flex-row items-center justify-center gap-2 transiton-all hover:bg-violet-600 duration-300"
-                  @click="toggleisNowState"
+                  @click="toggleisNowStateFalse"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -533,8 +533,11 @@ export default {
     toggleMenuDropDownVisible() {
       this.isMenuDropDownVisible = !this.isMenuDropDownVisible;
     },
-    toggleisNowState() {
-      this.isNowState = !this.isNowState;
+    toggleisNowStateTrue() {
+      this.isNowState = true;
+    },
+    toggleisNowStateFalse() {
+      this.isNowState = false;
     },
   },
 };
