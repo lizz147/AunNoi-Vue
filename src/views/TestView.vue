@@ -253,7 +253,7 @@ import giflink from "../assets/gif-link.gif";
             >
           </div>
 
-          <div class="absolute right-1 bottom-10">
+          <div class="absolute right-0 bottom-0 lg:right-1 lg:bottom-10">
             <div
               class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center hover:bg-slate-200 transition-all duration-200"
             >
@@ -478,14 +478,58 @@ import giflink from "../assets/gif-link.gif";
       </div>
     </div>
     <div
-      class="w-full bg-emerald-600 flex flex-row justify-evenly items-center sticky bottom-0"
+      class="w-full shadow-md flex flex-row justify-evenly items-end sticky bottom-0 max-h-[50px] md:max-h-[70px] lg:max-h-[80px] xl:max-h-[100px]"
+      style="background-color: rgba(0, 0, 0, 0.5);"
     >
       <div
-        class="flex flex-col items-center hover:bg-emerald-500 cursor-pointer pt-1"
-        v-for="item in items"
+        class="flex flex-col items-center  w-full cursor-pointer pt-1"
       >
-        <img :src="item.img" alt="กีฟาคาสิโน" class="w-1/2 lg:w-2/12" />
-        <p class="text-white">{{ item.name }}</p>
+        <img
+          src="../assets/icon/กีฬาคาสิโน.png"
+          alt="กีฟาคาสิโน"
+          class="w-1/2 lg:w-3/12"
+        />
+        <p class="text-white">กีฟาคาสิโน</p>
+      </div>
+      <div
+        class="flex flex-col items-center  w-full cursor-pointer pt-1"
+      >
+        <img
+          src="../assets/icon/สล็อตเกม.png"
+          alt="กีฟาคาสิโน"
+          class="w-1/2 lg:w-3/12"
+        />
+        <p class="text-white">สล็อตเกม</p>
+      </div>
+      <div
+        class="flex flex-col items-center  w-full cursor-pointer pt-1 relative"
+      >
+        <img
+          src="../assets/icon/ฝากถอน.png"
+          alt="กีฟาคาสิโน"
+          class="w-3/4 md:w-7/12 lg:w-6/12"
+        />
+        <p class="text-white">ฝากถอน</p>
+      </div>
+      <div
+        class="flex flex-col items-center  w-full cursor-pointer pt-1"
+      >
+        <img
+          src="../assets/icon/หวย.png"
+          alt="กีฟาคาสิโน"
+          class="w-1/2 lg:w-3/12"
+        />
+        <p class="text-white">หวย</p>
+      </div>
+      <div
+        class="flex flex-col items-center  w-full cursor-pointer pt-1"
+      >
+        <img
+          src="../assets/icon/หารายได้.png"
+          alt="กีฟาคาสิโน"
+          class="w-1/2 lg:w-3/12"
+        />
+        <p class="text-white">หารายได้</p>
       </div>
     </div>
 
