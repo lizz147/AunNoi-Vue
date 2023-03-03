@@ -23,7 +23,7 @@
       <img
         src="../../assets/icon/ฝากถอน.png"
         alt="กีฟาคาสิโน"
-        class="w-3/4 md:w-7/12 lg:w-6/12"
+        class="w-3/4 md:w-7/12 lg:w-5/12"
       />
       <p class="text-white">ฝากถอน</p>
     </div>
