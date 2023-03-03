@@ -5,19 +5,19 @@ import slotgame from "../assets/icon/สล็อตเกม.png";
 import huay from "../assets/icon/หวย.png";
 import earnmoney from "../assets/icon/หารายได้.png";
 import giflink from "../assets/gif-link.gif";
-import StickyBottom from "../components/Test/StickyBottom.vue";
+import StickyBottom from "../components/User/StickyBottom.vue";
 </script>
 
 <template>
   <div class="min-h-screen h-auto w-full flex flex-col relative bg-emerald-700">
     <div
       id="header"
-      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-30 py-1  lg:gap-0"
+      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-40"
     >
       <div>
-        <img src="../assets/small/logo.png" class="w-36 lg:w-48" />
+        <img src="../assets/small/logo.png" class="w-48" />
       </div>
-      <div class="flex flex-row items-center lg:gap-3">
+      <div class="flex flex-row items-center">
         <div class="flex flex-row relative">
           <div>
             <div class="flex flex-row bg-green-700 py-1 px-2 rounded-tl-md">
@@ -70,7 +70,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 stroke-white cursor-pointer hover:stroke-2 hover:stroke-green-600 transiton-all duration-200"
+              class="w-6 stroke-white cursor-pointer hover:stroke-2 transiton-all duration-200"
             >
               <path
                 stroke-linecap="round"
@@ -221,279 +221,96 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
       </div>
     </div>
     <div
-      class="w-full h-full bg-gray-900 flex flex-col justify-start pt-7 items-center py-24"
+      class="w-full min-h-screen bg-gray-900 flex flex-col justify-start items-center pt-8 pb-20"
     >
-      <div
-        class="w-full md:w-1/2 flex flex-row items-end justify-center"
-        id="glass"
-      >
-        <routerLink class="no-underline text-black" to="/test/moneylist">
-          <div
-            class="w-52 h-52 lg:w-80 lg:h-80 flex flex-col justify-center items-center rounded-full shadow-lg relative transiton-all cursor-pointer duration-300 group"
-            id="glassmorphism"
-          >
-            <div class="flex flex-col justify-center items-center">
-              <span class="flex flex-row mb-1"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 mr-1 group-hover:stroke-blue-700 transition-all duration-200"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <span
-                  class="text-base lg:text-xl group-hover:text-blue-700 transition-all duration-200"
-                  >ยอดเงินคงเหลือ</span
-                ></span
-              >
-              <span
-                ><h5
-                  class="text-white text-3xl tracking-widest group-hover:text-blue-600 transition-all duration-200"
-                >
-                  0.00
-                </h5></span
-              >
-            </div>
-
-            <div class="absolute right-0 bottom-0 lg:right-1 lg:bottom-10">
-              <div
-                class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center transition-all duration-200  hover:bg-red-500 hover:border-none"
-              >
-                <router-link to="/test/profile">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-7 hover:stroke-2 cursor-pointer transition-all duration-200 stroke-black"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
-                    />
-                  </svg>
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </routerLink>
+      <div class="w-11/12 lg:w-1/2 bg-slate-100 rounded-md p-3 mb-6">
         <div
-          class="w-28 h-28 lg:w-48 lg:h-48 flex flex-col justify-center items-center rounded-full shadow-lg"
-          id="glassmorphism"
+          class="flex flex-row justify-start items-center cursor-pointer mb-3"
         >
-          <div class="flex flex-col justify-center items-center">
-            <span
-              class="flex flex-col lg:flex-row mb-1 justify-center items-center"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 lg:mr-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z"
-                />
-              </svg>
-
-              <span class="text-xs lg:text-base">รายได้ชวนเพื่อน AF</span></span
-            >
-            <span
-              ><h5 class="text-white text-xl tracking-widest">0.00</h5></span
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="w-full lg:w-1/2 mt-3" id="button-deposit-withdraw">
-        <div class="flex flex-row items-center gap-2 px-2">
-          <button
-            class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center transition-all duration-300 hover:bg-green-600"
+          <router-link
+            class="text-base hover:text-red-700 transition-all duration-200 no-underline text-gray-800 flex flex-row items-center"
+            to="/user"
           >
-            <span class="mr-1"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="w-10 stroke-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </span>
-            <span class="text-white font-semibold text-xl">ฝากเงิน</span>
-          </button>
-          <button
-            class="bg-red-500 w-full py-2 flex flex-row justify-center gap-1 lg:gap-2 items-center transition-all duration-300 hover:bg-red-600"
-          >
-            <span class="mr-1"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="w-10 stroke-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </span>
-            <span class="text-white font-semibold text-xl">ถอนเงิน</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="w-full flex flex-row justify-center" id="gift">
-        <div class="w-full lg:w-1/2">
-          <img class="w-full object-cover" :src="giflink" alt="giflink" />
-        </div>
-      </div>
-
-      <div
-        id="menu"
-        class="h-auto w-full lg:w-1/2 flex flex-row mb-4 bg-slate-900"
-      >
-        <div class="w-3/12 pt-4">
-          <div class="flex flex-col items-center">
-            <div
-              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 mt-0.5"
             >
-              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
-              <span class="text-white text-sm">คาสิโน</span>
-            </div>
-            <div
-              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
-            >
-              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
-              <span class="text-white text-sm">คาสิโน</span>
-            </div>
-            <div
-              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
-            >
-              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
-              <span class="text-white text-sm">คาสิโน</span>
-            </div>
-            <div
-              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
-            >
-              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
-              <span class="text-white text-sm">คาสิโน</span>
-            </div>
-            <div
-              class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
-            >
-              <img class="w-7/12 lg:w-4/12" :src="casino" alt="casino" />
-              <span class="text-white text-sm">คาสิโน</span>
-            </div>
-          </div>
-        </div>
-        <div class="w-9/12 bg-gray-800 h-full mt-4 rounded-md py-2 px-3">
-          <div class="flex flex-col items-center">
-            <span class="text-white text-center text-sm lg:text-md mb-3">
-              Casino & Slot Online เกมส์และโต้ะเกมส์สดมากที่สุดในไทย
-            </span>
-            <div class="flex flex-row gap-2">
-              <div class="flex flex-col items-center cursor-pointer">
-                <img
-                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
-                  src="../assets/carousel/s1.png"
-                  alt="random"
-                />
-                <span class="mt-1 text-white text-center text-sm">สุ่มเกม</span>
-              </div>
-              <div class="flex flex-col items-center cursor-pointer">
-                <img
-                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
-                  src="../assets/carousel/s1.png"
-                  alt="random"
-                />
-                <span class="mt-1 text-white text-center text-sm"
-                  >SA Gaming</span
-                >
-              </div>
-            </div>
-            <div class="flex flex-col w-full mt-3 mb-3">
-              <img
-                class="rounded-lg object-cover w-auto h-56"
-                src="../assets/carousel/s2.png"
-                alt=""
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
               />
-              <span class="mt-1 text-white text-center text-sm"
-                >ASIA Gaming</span
-              >
-            </div>
-            <div class="flex flex-row gap-2 mb-2">
-              <div class="flex flex-col items-center cursor-pointer">
+            </svg>
+            ย้อนกลับ
+          </router-link>
+        </div>
+
+        <div class="bg-slate-100 shadow-sm rounded-md py-2">
+          <div class="flex flex-col">
+            <div
+              class="flex flex-row gap-2 md:gap-4 lg:gap-5 bg-white lg:px-10 p-1 lg:py-3 rounded-lg shadow-xl w-full"
+            >
+              <div class="flex flex-col items-center flex-none">
                 <img
-                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
-                  src="../assets/carousel/s1.png"
-                  alt="random"
+                  src="../assets/th/ktb.svg"
+                  class="w-16 md:w-20 lg:w-24 rounded-full p-3 bg-blue-500"
+                  alt=""
                 />
-                <span class="mt-1 text-white text-center text-sm">WB</span>
+                <span class="text-sm">KTB</span>
               </div>
-              <div class="flex flex-col items-center cursor-pointer">
-                <img
-                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
-                  src="../assets/carousel/s1.png"
-                  alt="random"
+              <div class="flex flex-col grow justify-center">
+                <span class="text-blue-700 mt-1"> ธนาคาร กรุงไทย </span>
+                <span class="mt-1 font-light">
+                  ชื่อบัญชี : <span class="font-normal">dasdasdsadsa</span>
+                </span>
+                <span class="mt-1 font-light">
+                  เลขที่บัญชี <span class="font-normal">661xxx554</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="w-full py-2 mt-2 px-2">
+              <span class="text-gray-700">จำนวนเงินที่ถอนได้</span>
+              <form action="#" class="w-full mb-5">
+                <input
+                  type="text"
+                  value="10.00 บาท"
+                  class="text-end w-full py-2 text-3xl text-gray-500 outline-blue-500 px-3"
                 />
-                <span class="mt-1 text-white text-center text-sm"
-                  >AMB Poker</span
+              </form>
+              <div class="flex flex-col mb-3">
+                <span class="text-gray-700">จำนวนเงินที่ต้องการถอน</span>
+                <span class="text-xs text-gray-700"
+                  >*ถอนเงินขั้นต่ำ 150 บาท หรือ 200,000</span
                 >
               </div>
-            </div>
-            <div class="flex flex-row gap-2 mb-2">
-              <div class="flex flex-col items-center cursor-pointer">
-                <img
-                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
-                  src="../assets/carousel/s1.png"
-                  alt="random"
-                />
-                <span class="mt-1 text-white text-center text-sm">สุ่มเกม</span>
-              </div>
-              <div class="flex flex-col items-center cursor-pointer">
-                <img
-                  class="w-auto h-32 lg:h-40 object-cover rounded-lg"
-                  src="../assets/carousel/s1.png"
-                  alt="random"
-                />
-                <span class="mt-1 text-white text-center text-sm"
-                  >SA Gaming</span
-                >
-              </div>
+              <form action="#" class="w-full">
+                <div class="flex flex-row gap-1 mb-3">
+                  <input
+                    type="text"
+                    class="w-9/12 py-2 px-3 rounded-md shadow-md"
+                    placeholder="ใส่จำนวนเงินที่ท่านต้องการถอน"
+                  />
+                  <button class="w-3/12 border border-gray-500 rounded-xl py-2 transition-all duration-300 hover:text-white hover:bg-black">
+                    ทั้งหมด
+                  </button>
+                </div>
+                <button class="w-full py-3 rounded-xl text-gray-700 hover:text-white bg-red-500 transition-all duration-300 hover:bg-red-600 text-lg">ถอนเงิน</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <StickyBottom />
-
     <div
       v-show="isContectVisible"
       id="center-popup"
-      class="fade w-11/12 lg:w-11/12 h-1/6 absolute  top-48 lg:top-2 left-1/2 transform -translate-x-1/2   shadow rounded-md z-50 bg-slate-50"
+      class="fade w-11/12 lg:w-1/2 absolute top-56 lg:top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md z-50"
     >
       <div class="flex flex-col h-full">
         <div
@@ -517,20 +334,20 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
           </svg>
         </div>
         <div
-          class="flex flex-col md:flex-row justify-center items-center gap-3 py-5 rounded-b-md h-full"
+          class="flex flex-row justify-center items-center gap-3 py-5 rounded-b-md h-full"
         >
           <div
-            class="flex flex-col items-center border border-emerald-500 p-4 px-5 cursor-pointer transiton-all hover:bg-green-200 duration-300"
+            class="flex flex-col items-center border border-emerald-500 p-4 px-1 lg:px-5 cursor-pointer transiton-all hover:bg-green-200 duration-300"
           >
             <span class="text-green-700">ติดต่อผ่านไลท์</span>
             <img
               src="../assets/small/LINE_logo.svg.png"
               alt="Line"
-              width="60"
+              class="w-12 lg:w-14"
             />
           </div>
           <div
-            class="flex flex-col items-center border border-red-500 p-4 cursor-pointer transiton-all hover:bg-red-200 duration-300"
+            class="flex flex-col items-center border border-red-500 px-1 lg:px-5 cursor-pointer transiton-all hover:bg-red-200 duration-300"
           >
             <span class="text-red-700 mb-1">แชทสดกับพนักงาน</span>
             <svg
@@ -539,8 +356,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              width="50"
-              class="stroke-red-500"
+              class="stroke-red-500 w-16 lg:w-20"
             >
               <path
                 stroke-linecap="round"
@@ -552,9 +368,6 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
         </div>
       </div>
     </div>
-    <div v-show="isContectVisible"  class="w-full h-full absolute z-40"     style="background-color: rgba(0, 0, 0, 0.5)">
-
-    </div>
   </div>
 </template>
 
@@ -562,9 +375,10 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
 export default {
   data() {
     return {
+      message: "ฝาก / ถอนเงิน",
+      isNowState: true,
       isContectVisible: false,
       isMenuDropDownVisible: false,
-      isMenuMoneyListVisible: false,
       items: [
         {
           name: "กีฬาคาสิโน",
@@ -596,8 +410,20 @@ export default {
     toggleMenuDropDownVisible() {
       this.isMenuDropDownVisible = !this.isMenuDropDownVisible;
     },
-    toggleMoneyListVisible() {
-      this.isMoneyListVisible = !this.isMoneyListVisible;
+    toggleisNowStateTrue() {
+      this.isNowState = true;
+    },
+    toggleisNowStateFalse() {
+      this.isNowState = false;
+    },
+    changeMessage1() {
+      this.message = "ฝาก / ถอนเงิน";
+    },
+    changeMessage2() {
+      this.message = "ฝาก";
+    },
+    changeMessage3() {
+      this.message = "ถอน";
     },
   },
 };

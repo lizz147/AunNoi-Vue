@@ -5,7 +5,7 @@ import slotgame from "../assets/icon/สล็อตเกม.png";
 import huay from "../assets/icon/หวย.png";
 import earnmoney from "../assets/icon/หารายได้.png";
 import giflink from "../assets/gif-link.gif";
-import StickyBottom from "../components/Test/StickyBottom.vue";
+import StickyBottom from "../components/User/StickyBottom.vue";
 </script>
 
 <template>
@@ -229,7 +229,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
         >
           <router-link
             class="text-base hover:text-red-700 transition-all duration-200 no-underline text-gray-800 flex flex-row items-center"
-            to="/test"
+            to="/user"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

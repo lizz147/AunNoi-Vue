@@ -6,9 +6,10 @@ import NewsView from "../views/NewsView.vue";
 import NewsReadView from "../views/NewsReadView.vue";
 import ContactView from "../views/ContactView.vue";
 import RuleView from "../views/RuleView.vue";
-import TestView from "../views/TestView.vue";
+import UserView from "../views/UserView.vue";
 import TestProfileView from "../views/TestProfileView.vue";
 import TestMoneyView from "../views/TestMoneyView.vue";
+import WithdrawView from "../views/WithdrawView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -48,9 +49,9 @@ const router = createRouter({
       component: RuleView,
     },
     {
-      path: "/test",
-      name: "test",
-      component: TestView,
+      path: "/user",
+      name: "user",
+      component: UserView,
     },
     {
       path: "/test/profile",
@@ -61,6 +62,11 @@ const router = createRouter({
       path: "/test/moneylist",
       name: "testmoneylist",
       component: TestMoneyView,
+    },
+    {
+      path: "/user/withdraw",
+      name: "userwithdraw",
+      component: WithdrawView,
     },
   ],
 });
