@@ -12,12 +12,12 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
   <div class="min-h-screen h-auto w-full flex flex-col relative bg-emerald-700">
     <div
       id="header"
-      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-40"
+      class="w-full bg-emerald-700 flex flex-row justify-evenly items-center sticky top-0 z-30 py-1  lg:gap-0"
     >
       <div>
-        <img src="../assets/small/logo.png" class="w-48" />
+        <img src="../assets/small/logo.png" class="w-36 lg:w-48" />
       </div>
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center lg:gap-3">
         <div class="flex flex-row relative">
           <div>
             <div class="flex flex-row bg-green-700 py-1 px-2 rounded-tl-md">
@@ -70,7 +70,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 stroke-white cursor-pointer hover:stroke-2 transiton-all duration-200"
+              class="w-6 stroke-white cursor-pointer hover:stroke-2 hover:stroke-green-600 transiton-all duration-200"
             >
               <path
                 stroke-linecap="round"
@@ -264,7 +264,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
 
             <div class="absolute right-0 bottom-0 lg:right-1 lg:bottom-10">
               <div
-                class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center hover:bg-slate-200 transition-all duration-200"
+                class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center transition-all duration-200  hover:bg-red-500 hover:border-none"
               >
                 <router-link to="/test/profile">
                   <svg
@@ -273,7 +273,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-7 hover:stroke-2 cursor-pointer transition-all duration-200 stroke-gray-900"
+                    class="w-7 hover:stroke-2 cursor-pointer transition-all duration-200 stroke-black"
                   >
                     <path
                       stroke-linecap="round"
@@ -320,7 +320,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
       <div class="w-full lg:w-1/2 mt-3" id="button-deposit-withdraw">
         <div class="flex flex-row items-center gap-2 px-2">
           <button
-            class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center border border-white hover:bg-green-600"
+            class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center transition-all duration-300 hover:bg-green-600"
           >
             <span class="mr-1"
               ><svg
@@ -341,7 +341,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
             <span class="text-white font-semibold text-xl">ฝากเงิน</span>
           </button>
           <button
-            class="bg-red-500 w-full py-2 flex flex-row justify-center gap-1 lg:gap-2 items-center border border-white hover:bg-red-600"
+            class="bg-red-500 w-full py-2 flex flex-row justify-center gap-1 lg:gap-2 items-center transition-all duration-300 hover:bg-red-600"
           >
             <span class="mr-1"
               ><svg
@@ -366,7 +366,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
 
       <div class="w-full flex flex-row justify-center" id="gift">
         <div class="w-full lg:w-1/2">
-          <img class="w-full" :src="giflink" alt="giflink" />
+          <img class="w-full object-cover" :src="giflink" alt="giflink" />
         </div>
       </div>
 
@@ -493,7 +493,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
     <div
       v-show="isContectVisible"
       id="center-popup"
-      class="fade w-11/12 lg:w-1/2 absolute top-48 lg:top-56 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-50 shadow rounded-md z-50"
+      class="fade w-11/12 lg:w-11/12 h-1/6 absolute  top-48 lg:top-2 left-1/2 transform -translate-x-1/2   shadow rounded-md z-50 bg-slate-50"
     >
       <div class="flex flex-col h-full">
         <div
@@ -517,7 +517,7 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
           </svg>
         </div>
         <div
-          class="flex flex-row justify-center items-center gap-3 py-5 rounded-b-md h-full"
+          class="flex flex-col md:flex-row justify-center items-center gap-3 py-5 rounded-b-md h-full"
         >
           <div
             class="flex flex-col items-center border border-emerald-500 p-4 px-5 cursor-pointer transiton-all hover:bg-green-200 duration-300"
@@ -551,6 +551,9 @@ import StickyBottom from "../components/Test/StickyBottom.vue";
           </div>
         </div>
       </div>
+    </div>
+    <div v-show="isContectVisible"  class="w-full h-full absolute z-40"     style="background-color: rgba(0, 0, 0, 0.5)">
+
     </div>
   </div>
 </template>

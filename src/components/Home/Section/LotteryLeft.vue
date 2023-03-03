@@ -13,13 +13,13 @@ import YeegeeVip from "./Accordion/YeegeeVip.vue";
 </script>
 <template>
   <div class="w-full py-4" style="user-select: none">
-    <h5 class="text-center">ผลรางวัล</h5>
+    <h5 class="text-center text-4xl mb-2">ผลรางวัล</h5>
     <div class="mb-3">
       <Thai />
     </div>
     <div class="mb-3">
       <div class="flex flex-col items-center gap-1 md:flex-row md:items-start">
-        <Gts />
+        <Gts class="mb-2 lg:mb-0" />
         <Aomsin />
       </div>
     </div>

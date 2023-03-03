@@ -58,7 +58,7 @@ export default {
 };
 </script>
 <template>
-  <div class="px-4 lg:px-20 my-5 lg:my-10">
+  <div class="px-4 lg:px-20 my-5">
     <swiper
       :slidesPerView="2"
       :spaceBetween="5"
@@ -98,9 +98,7 @@ export default {
         <img
           :src="item.img"
           alt="game"
-          width="250"
-          height="300"
-          class="rounded-xl rounded-b-none"
+          class="rounded-xl rounded-b-none lg:w-[250px] lg:h-[140px]"
         />
         <p class="text-white py-0.5">{{ item.name }}</p>
       </swiper-slide>
