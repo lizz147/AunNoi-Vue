@@ -73,7 +73,7 @@ import Date from "../ReportAf/Date.vue";
           </select>
           <Date />
         </form>
-        <table class="table-auto w-full mt-3" v-show="isIncomeState">
+        <table class="table-auto w-full mt-3" v-show="this.isIncomeState">
           <thead>
             <tr>
               <th
