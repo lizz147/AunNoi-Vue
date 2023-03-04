@@ -49,9 +49,10 @@
         </p>
         <form
           action="#"
-          class="flex flex-row justify-center lg:justify-end mt-2 lg:px-0"
+          class="flex flex-row justify-center lg:justify-end mt-2 lg:px-0 mb-2 lg:mb-0"
         >
           <input
+            value="mm/dd/yyyy"
             class="border border-gray-500 py-2 px-3 w-full lg:w-3/12 rounded-xl"
             type="date"
           />

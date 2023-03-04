@@ -69,6 +69,7 @@
             <option value="1">รายได้คลิกแชร์</option>
           </select>
           <input
+            value="mm/dd/yyyy"
             class="border border-gray-500 py-2 px-3 w-full lg:w-3/12 rounded-xl"
             type="date"
           />
@@ -142,8 +143,8 @@ export default {
         "คงเหลือ",
       ],
       tableBody: [1, 2, 3, 4, 5],
-      tableContent1: ["-","-","-","-","-"],
-      tableContent2: ["-","-","-","-"],
+      tableContent1: ["-", "-", "-", "-", "-"],
+      tableContent2: ["-", "-", "-", "-"],
     };
   },
   methods: {
