@@ -13,7 +13,7 @@ import StickyBottom from "../components/User/StickyBottom.vue";
         class="w-full md:w-1/2 flex flex-row items-end justify-center"
         id="glass"
       >
-        <routerLink class="no-underline text-black" to="/test/moneylist">
+        <routerLink class="no-underline text-black" to="/user/moneyreport">
           <div
             class="w-52 h-52 lg:w-80 lg:h-80 flex flex-col justify-center items-center rounded-full shadow-lg relative transiton-all cursor-pointer duration-300 group"
             id="glassmorphism"
@@ -50,9 +50,9 @@ import StickyBottom from "../components/User/StickyBottom.vue";
 
             <div class="absolute right-0 bottom-0 lg:right-1 lg:bottom-10">
               <div
-                class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center transition-all duration-200  hover:bg-red-500 hover:border-none"
+                class="w-14 h-14 rounded-full border-2 border-gray-100 bg-slate-100 shadow-sm flex flex-col items-center justify-center transition-all duration-200 hover:bg-red-500 hover:border-none"
               >
-                <router-link to="/test/profile">
+                <router-link to="/user/profile">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -72,35 +72,40 @@ import StickyBottom from "../components/User/StickyBottom.vue";
             </div>
           </div>
         </routerLink>
-        <div
-          class="w-28 h-28 lg:w-48 lg:h-48 flex flex-col justify-center items-center rounded-full shadow-lg"
-          id="glassmorphism"
-        >
-          <div class="flex flex-col justify-center items-center">
-            <span
-              class="flex flex-col lg:flex-row mb-1 justify-center items-center"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 lg:mr-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z"
-                />
-              </svg>
 
-              <span class="text-xs lg:text-base">รายได้ชวนเพื่อน AF</span></span
-            >
-            <span
-              ><h5 class="text-white text-xl tracking-widest">0.00</h5></span
-            >
+        <router-link class="no-underline text-black" to="/reportaf">
+          <div
+            class="w-28 h-28 lg:w-48 lg:h-48 flex flex-col justify-center items-center rounded-full shadow-lg cursor-pointer"
+            id="glassmorphism"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <span
+                class="flex flex-col lg:flex-row mb-1 justify-center items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 lg:mr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z"
+                  />
+                </svg>
+
+                <span class="text-xs lg:text-base"
+                  >รายได้ชวนเพื่อน AF</span
+                ></span
+              >
+              <span
+                ><h5 class="text-white text-xl tracking-widest">0.00</h5></span
+              >
+            </div>
           </div>
-        </div>
+        </router-link>
       </div>
 
       <div class="w-full lg:w-1/2 mt-3" id="button-deposit-withdraw">
@@ -126,35 +131,42 @@ import StickyBottom from "../components/User/StickyBottom.vue";
             </span>
             <span class="text-white font-semibold text-xl">ฝากเงิน</span>
           </button>
-          <router-link to="user/withdraw" class="no-underline text-white w-full">
-            <button
-            class="bg-red-500 w-full py-2 flex flex-row justify-center gap-1 lg:gap-2 items-center transition-all duration-300 hover:bg-red-600"
+          <router-link
+            to="user/withdraw"
+            class="no-underline text-white w-full"
           >
-            <span class="mr-1"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="w-10 stroke-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </span>
-            <span class="text-white font-semibold text-xl">ถอนเงิน</span>
-          </button>
+            <button
+              class="bg-red-500 w-full py-2 flex flex-row justify-center gap-1 lg:gap-2 items-center transition-all duration-300 hover:bg-red-600"
+            >
+              <span class="mr-1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-10 stroke-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </span>
+              <span class="text-white font-semibold text-xl">ถอนเงิน</span>
+            </button>
           </router-link>
         </div>
       </div>
 
       <div class="w-full flex flex-row justify-center" id="gift">
         <div class="w-full lg:w-1/2">
-          <img class="w-full object-cover" src="../assets/gif-link.gif" alt="giflink" />
+          <img
+            class="w-full object-cover"
+            src="../assets/gif-link.gif"
+            alt="giflink"
+          />
         </div>
       </div>
 
@@ -167,31 +179,51 @@ import StickyBottom from "../components/User/StickyBottom.vue";
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
             >
-              <img class="w-7/12 lg:w-4/12" src="../assets/icon/สล็อตเกม.png" alt="casino" />
+              <img
+                class="w-7/12 lg:w-4/12"
+                src="../assets/icon/สล็อตเกม.png"
+                alt="casino"
+              />
               <span class="text-white text-sm">คาสิโน</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
             >
-              <img class="w-7/12 lg:w-4/12" src="../assets/icon/สล็อตเกม.png" alt="casino" />
+              <img
+                class="w-7/12 lg:w-4/12"
+                src="../assets/icon/สล็อตเกม.png"
+                alt="casino"
+              />
               <span class="text-white text-sm">คาสิโน</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
             >
-              <img class="w-7/12 lg:w-4/12" src="../assets/icon/สล็อตเกม.png" alt="casino" />
+              <img
+                class="w-7/12 lg:w-4/12"
+                src="../assets/icon/สล็อตเกม.png"
+                alt="casino"
+              />
               <span class="text-white text-sm">คาสิโน</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
             >
-              <img class="w-7/12 lg:w-4/12" src="../assets/icon/สล็อตเกม.png" alt="casino" />
+              <img
+                class="w-7/12 lg:w-4/12"
+                src="../assets/icon/สล็อตเกม.png"
+                alt="casino"
+              />
               <span class="text-white text-sm">คาสิโน</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
             >
-              <img class="w-7/12 lg:w-4/12" src="../assets/icon/สล็อตเกม.png" alt="casino" />
+              <img
+                class="w-7/12 lg:w-4/12"
+                src="../assets/icon/สล็อตเกม.png"
+                alt="casino"
+              />
               <span class="text-white text-sm">คาสิโน</span>
             </div>
           </div>
@@ -278,26 +310,3 @@ import StickyBottom from "../components/User/StickyBottom.vue";
     <StickyBottom />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      isContectVisible: false,
-      isMenuDropDownVisible: false,
-      isMenuMoneyListVisible: false,
-    };
-  },
-  methods: {
-    toggleContectVisible() {
-      this.isContectVisible = !this.isContectVisible;
-    },
-    toggleMenuDropDownVisible() {
-      this.isMenuDropDownVisible = !this.isMenuDropDownVisible;
-    },
-    toggleMoneyListVisible() {
-      this.isMoneyListVisible = !this.isMoneyListVisible;
-    },
-  },
-};
-</script>

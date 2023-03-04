@@ -7,9 +7,10 @@ import NewsReadView from "../views/NewsReadView.vue";
 import ContactView from "../views/ContactView.vue";
 import RuleView from "../views/RuleView.vue";
 import UserView from "../views/UserView.vue";
-import TestProfileView from "../views/TestProfileView.vue";
-import TestMoneyView from "../views/TestMoneyView.vue";
+import ProfileSettingView from "../views/ProfileSettingView.vue";
+import MoneyReportView from "../views/MoneyReportView.vue";
 import WithdrawView from "../views/WithdrawView.vue";
+import ReportAfView from "../views/ReportAfView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -54,19 +55,24 @@ const router = createRouter({
       component: UserView,
     },
     {
-      path: "/test/profile",
-      name: "testprofile",
-      component: TestProfileView,
+      path: "/user/profile",
+      name: "userprofile",
+      component: ProfileSettingView,
     },
     {
-      path: "/test/moneylist",
-      name: "testmoneylist",
-      component: TestMoneyView,
+      path: "/user/moneyreport",
+      name: "usermoneyreport",
+      component: MoneyReportView,
     },
     {
       path: "/user/withdraw",
       name: "userwithdraw",
       component: WithdrawView,
+    },
+    {
+      path: "/reportaf",
+      name: "reportaf",
+      component: ReportAfView,
     },
   ],
 });

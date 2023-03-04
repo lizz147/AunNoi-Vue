@@ -7,7 +7,7 @@ import StickyHeader from "../components/User/StickyHeader.vue";
   <div class="min-h-screen h-auto w-full flex flex-col relative bg-emerald-700">
     <StickyHeader />
     <div
-      class="w-full min-h-screen bg-gray-900 flex flex-col justify-start items-center pt-8 pb-20"
+      class="w-full  bg-gray-900 flex flex-col justify-start items-center pt-8 pb-20"
     >
       <div class="w-11/12 lg:w-1/2 bg-slate-100 rounded-md p-3 mb-6">
         <div
