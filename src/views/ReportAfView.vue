@@ -12,7 +12,7 @@ import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
       >
         <div
           id="incomeaf"
-          :class="{ 'bg-slate-900 text-blue-500': this.StateIncomeAf }"
+          :class="{ 'bg-slate-900 text-blue-500': isStateIncomeAf }"
           class="text-sm md:text-base text-center py-2 border-t border-r border-b border-gray-500 rounded-t-xl transition-all hover:bg-slate-900 duration-300 cursor-pointer hover:text-blue-500"
           @click="setState($event)"
         >
@@ -20,7 +20,7 @@ import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
         </div>
         <div
           id="networkAf"
-          :class="{ 'bg-slate-900 text-blue-500': this.StateNetworkAf }"
+          :class="{ 'bg-slate-900 text-blue-500': isStateNetworkAf }"
           class="text-sm md:text-base text-center py-2 border-t border-r border-b border-gray-500 rounded-t-xl transition-all hover:bg-slate-900 duration-300 cursor-pointer hover:text-blue-500"
           @click="setState($event)"
         >
@@ -28,7 +28,7 @@ import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
         </div>
         <div
           id="withdrawAf"
-          :class="{ 'bg-slate-900 text-blue-500': this.StateWithdrawAf }"
+          :class="{ 'bg-slate-900 text-blue-500': isStateWithdrawAf }"
           class="text-sm md:text-base text-center py-2 border-t border-r border-b border-gray-500 rounded-t-xl transition-all hover:bg-slate-900 duration-300 cursor-pointer hover:text-blue-500"
           @click="setState($event)"
         >
@@ -36,7 +36,7 @@ import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
         </div>
         <div
           id="howtoaf"
-          :class="{ 'bg-slate-900 text-blue-500': this.StateHowtoAf }"
+          :class="{ 'bg-slate-900 text-blue-500': isStateHowtoAf }"
           class="text-sm md:text-base text-center py-2 border-t border-r border-b border-gray-500 rounded-t-xl transition-all hover:bg-slate-900 duration-300 cursor-pointer hover:text-blue-500"
           @click="setState($event)"
         >
@@ -44,10 +44,10 @@ import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
         </div>
       </div>
     </div>
-    <IncomeAf v-show="StateIncomeAf" />
-    <NetworkAf v-show="StateNetworkAf" />
-    <WithdrawAf v-show="StateWithdrawAf" />
-    <HowtoAf v-show="StateHowtoAf" />
+    <IncomeAf v-if="isStateIncomeAf" />
+    <NetworkAf v-if="isStateNetworkAf" />
+    <WithdrawAf v-if="isStateWithdrawAf" />
+    <HowtoAf v-if="isStateHowtoAf" />
   </div>
 </template>
 
@@ -56,10 +56,10 @@ export default {
   data() {
     return {
       id: "",
-      StateIncomeAf: true,
-      StateNetworkAf: false,
-      StateWithdrawAf: false,
-      StateHowtoAf: false,
+      isStateIncomeAf: true,
+      isStateNetworkAf: false,
+      isStateWithdrawAf: false,
+      isStateHowtoAf: false,
       items: [
         {
           name: "รายได้ AF",
@@ -80,31 +80,31 @@ export default {
     setState(event) {
       this.id = event.target.id;
       if (this.id == "incomeaf") {
-        this.StateIncomeAf = true;
-        this.StateNetworkAf = false;
-        this.StateWithdrawAf = false;
-        this.StateHowtoAf = false;
+        this.isStateIncomeAf = true;
+        this.isStateNetworkAf = false;
+        this.isStateWithdrawAf = false;
+        this.isStateHowtoAf = false;
         return;
       }
       if (this.id == "networkAf") {
-        this.StateIncomeAf = false;
-        this.StateNetworkAf = true;
-        this.StateWithdrawAf = false;
-        this.StateHowtoAf = false;
+        this.isStateIncomeAf = false;
+        this.isStateNetworkAf = true;
+        this.isStateWithdrawAf = false;
+        this.isStateHowtoAf = false;
         return;
       }
       if (this.id == "withdrawAf") {
-        this.StateIncomeAf = false;
-        this.StateNetworkAf = false;
-        this.StateWithdrawAf = true;
-        this.StateHowtoAf = false;
+        this.isStateIncomeAf = false;
+        this.isStateNetworkAf = false;
+        this.isStateWithdrawAf = true;
+        this.isStateHowtoAf = false;
         return;
       }
       if (this.id == "howtoaf") {
-        this.StateIncomeAf = false;
-        this.StateNetworkAf = false;
-        this.StateWithdrawAf = false;
-        this.StateHowtoAf = true;
+        this.isStateIncomeAf = false;
+        this.isStateNetworkAf = false;
+        this.isStateWithdrawAf = false;
+        this.isStateHowtoAf = true;
         return;
       }
     },

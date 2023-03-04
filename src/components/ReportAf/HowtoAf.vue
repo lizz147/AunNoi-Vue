@@ -85,18 +85,18 @@ import tableImg from "../../assets/New folder/h-af-full-table.jpg";
           <img v-show="isPremier" :src="premierImg" alt="isPremier" />
           <img v-show="isGold" :src="goldImg" alt="isGold" />
           <img v-show="isPlatinum" :src="platinumImg" alt="isPlatinum" />
-          <img v-show="isDiamond" :src="isDiamond" alt="isDiamond" />
+          <img v-show="isDiamond" :src="diamondImg" alt="isDiamond" />
           <img v-show="isFirst" :src="firstImg" alt="isFirst" />
           <img v-show="isWisdom" :src="wisdomImg" alt="isWisdom" />
           <img v-show="isInfinite" :src="infiniteImg" alt="isInfinite" />
           <div class="w-full flex flex-row justify-center">
-            <button
-              class="flex flex-row gap-1 bg-black text-white py-2 px-5 rounded-xl"
+            <a
+              class="flex flex-row text-white no-underline"
+              :href="stateImg"
+              target="_blank"
             >
-              <a
-                class="flex flex-row text-white no-underline"
-                :href="stateImg"
-                target="_blank"
+              <button
+                class="flex flex-row gap-1 bg-black text-white py-2 px-5 rounded-xl"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +114,8 @@ import tableImg from "../../assets/New folder/h-af-full-table.jpg";
                 </svg>
 
                 คลิกเพื่อดูภาพขนาดใหญ่
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
           <div class="w-full flex flex-row">
             <span class="bg-gray-300 h-0.5 w-full my-3"></span>
@@ -125,13 +125,13 @@ import tableImg from "../../assets/New folder/h-af-full-table.jpg";
           <img :src="tableImg" alt="table" />
         </div>
         <div class="w-full flex flex-row justify-center">
-          <button
-            class="flex flex-row gap-1 bg-red-500 text-white py-2 px-5 rounded-xl"
+          <a
+            class="flex flex-row text-white no-underline"
+            :href="tableImg"
+            target="_blank"
           >
-            <a
-              class="flex flex-row text-white no-underline"
-              :href="tableImg"
-              target="_blank"
+            <button
+              class="flex flex-row gap-1 bg-red-500 text-white py-2 px-5 rounded-xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -149,8 +149,8 @@ import tableImg from "../../assets/New folder/h-af-full-table.jpg";
               </svg>
 
               คลิกเพื่อดูภาพขนาดใหญ่
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </div>
     </div>
