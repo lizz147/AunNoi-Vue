@@ -46,14 +46,14 @@ import Date from "../ReportAf/Date.vue";
         <div class="grid grid-cols-2 mt-2">
           <div
             @click="SetIncomeState"
-            :class="{ 'bg-green-600 text-white': this.isIncomeState }"
+            :class="{ 'bg-green-600 text-white': isIncomeState }"
             class="text-center py-3 rounded-t-lg cursor-pointer border border-gray-500 border-r-0 transition-all duration-300"
           >
             ยอดราย AF
           </div>
           <div
             @click="SetWithdrawState"
-            :class="{ 'bg-green-600 text-white': this.isWithdrawState }"
+            :class="{ 'bg-green-600 text-white': isWithdrawState }"
             class="text-center py-3 rounded-t-lg text-gray-700 cursor-pointer border border-gray-500 transition-all duration-300"
           >
             ยอดถอน AF
@@ -73,7 +73,7 @@ import Date from "../ReportAf/Date.vue";
           </select>
           <Date />
         </form>
-        <table class="table-auto w-full mt-3" v-show="this.isIncomeState">
+        <table class="table-auto w-full mt-3" v-show="isIncomeState">
           <thead>
             <tr>
               <th
