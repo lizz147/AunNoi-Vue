@@ -1,3 +1,6 @@
+<script setup>
+import Date from "../ReportAf/Date.vue";
+</script>
 <template>
   <div class="border-t-0 border border-gray-500 p-3">
     <div class="w-full flex flex-col">
@@ -68,11 +71,7 @@
             <option value="1">ส่วนแบ่ง AF</option>
             <option value="1">รายได้คลิกแชร์</option>
           </select>
-          <input
-            value="mm/dd/yyyy"
-            class="border border-gray-500 py-2 px-3 w-full lg:w-3/12 rounded-xl"
-            type="date"
-          />
+          <Date />
         </form>
         <table class="table-auto w-full mt-3" v-show="isIncomeState">
           <thead>

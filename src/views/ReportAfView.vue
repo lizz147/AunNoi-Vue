@@ -3,6 +3,7 @@ import IncomeAf from "../components/ReportAf/IncomeAf.vue";
 import HowtoAf from "../components/ReportAf/HowtoAf.vue";
 import NetworkAf from "../components/ReportAf/NetworkAf.vue";
 import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
+import VueTailwindDatepicker from 'vue-tailwind-datepicker'
 </script>
 <template>
   <div class="container py-3">
