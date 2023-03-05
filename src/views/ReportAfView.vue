@@ -3,10 +3,34 @@ import IncomeAf from "../components/ReportAf/IncomeAf.vue";
 import HowtoAf from "../components/ReportAf/HowtoAf.vue";
 import NetworkAf from "../components/ReportAf/NetworkAf.vue";
 import WithdrawAf from "../components/ReportAf/WithdrawAf.vue";
-import VueTailwindDatepicker from 'vue-tailwind-datepicker'
+import StickyBottom from "../components/User/StickyBottom.vue";
+import StickyHeader from "../components/User/StickyHeader.vue";
+import VueTailwindDatepicker from "vue-tailwind-datepicker";
 </script>
 <template>
-  <div class="container py-3">
+  <StickyHeader />
+  <div class="container py-3 bg-slate-100">
+    <router-link to="/user" class="mb-1 no-underline">
+      <div
+        class="bg-red-500 w-fit text-white rounded-lg mb-1 py-2 px-3 transition-all duration-300 hover:text-red-700 flex flex-row gap-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+          />
+        </svg>
+        หน้าแรก
+      </div>
+    </router-link>
     <div id="headerAf">
       <div
         class="grid grid-cols-4 w-full border-l border-gray-500 rounded-tl-xl"
@@ -50,6 +74,7 @@ import VueTailwindDatepicker from 'vue-tailwind-datepicker'
     <WithdrawAf v-if="isStateWithdrawAf" />
     <HowtoAf v-if="isStateHowtoAf" />
   </div>
+  <StickyBottom />
 </template>
 
 <script>
