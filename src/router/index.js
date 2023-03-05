@@ -11,6 +11,8 @@ import ProfileSettingView from "../views/ProfileSettingView.vue";
 import MoneyReportView from "../views/MoneyReportView.vue";
 import WithdrawView from "../views/WithdrawView.vue";
 import ReportAfView from "../views/ReportAfView.vue";
+import DepositView from "../views/DepositView.vue";
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -70,9 +72,14 @@ const router = createRouter({
       component: WithdrawView,
     },
     {
-      path: "/reportaf",
-      name: "reportaf",
+      path: "/user/reportaf",
+      name: "userreportaf",
       component: ReportAfView,
+    },
+    {
+      path: "/user/deposit",
+      name: "userdeposit",
+      component: DepositView,
     },
   ],
 });

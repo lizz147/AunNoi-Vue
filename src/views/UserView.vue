@@ -73,7 +73,7 @@ import StickyBottom from "../components/User/StickyBottom.vue";
           </div>
         </routerLink>
 
-        <router-link class="no-underline text-black" to="/reportaf">
+        <router-link class="no-underline text-black" to="/user/reportaf">
           <div
             class="w-28 h-28 lg:w-48 lg:h-48 flex flex-col justify-center items-center rounded-full shadow-lg cursor-pointer"
             id="glassmorphism"
@@ -110,27 +110,29 @@ import StickyBottom from "../components/User/StickyBottom.vue";
 
       <div class="w-full lg:w-1/2 mt-3" id="button-deposit-withdraw">
         <div class="flex flex-row items-center gap-2 px-2">
-          <button
-            class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center transition-all duration-300 hover:bg-green-600"
-          >
-            <span class="mr-1"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="white"
-                class="w-10 stroke-2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </span>
-            <span class="text-white font-semibold text-xl">ฝากเงิน</span>
-          </button>
+          <router-link to="user/deposit" class="no-underline text-white w-full">
+            <button
+              class="bg-green-500 w-full py-2 flex flex-row justify-center gap-1 md:gap-2 lg:gap-3 items-center transition-all duration-300 hover:bg-green-600"
+            >
+              <span class="mr-1"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="w-10 stroke-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </span>
+              <span class="text-white font-semibold text-xl">ฝากเงิน</span>
+            </button>
+          </router-link>
           <router-link
             to="user/withdraw"
             class="no-underline text-white w-full"
@@ -160,16 +162,17 @@ import StickyBottom from "../components/User/StickyBottom.vue";
         </div>
       </div>
 
-      <div class="w-full flex flex-row justify-center" id="gift">
-        <div class="w-full lg:w-1/2">
-          <img
-            class="w-full object-cover"
-            src="../assets/gif-link.gif"
-            alt="giflink"
-          />
+      <router-link class="w-full" to="/user/reportaf">
+        <div class="w-full flex flex-row justify-center" id="gift">
+          <div class="w-full lg:w-1/2">
+            <img
+              class="w-full object-cover"
+              src="../assets/gif-link.gif"
+              alt="giflink"
+            />
+          </div>
         </div>
-      </div>
-
+      </router-link>
       <div
         id="menu"
         class="h-auto w-full lg:w-1/2 flex flex-row mb-4 bg-slate-900"
