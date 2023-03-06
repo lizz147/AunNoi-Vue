@@ -1,7 +1,7 @@
 <template>
   <div
     class="w-full shadow-md flex flex-row justify-evenly items-end sticky bottom-0 max-h-[50px] md:max-h-[70px] lg:max-h-[80px] xl:max-h-[100px]"
-    style="background-color: rgba(0, 0, 0, 0.5)"
+    style="background-color: black"
   >
     <div class="flex flex-col items-center w-full cursor-pointer pt-1">
       <img

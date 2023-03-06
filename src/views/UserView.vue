@@ -184,10 +184,10 @@ import StickyBottom from "../components/User/StickyBottom.vue";
             >
               <img
                 class="w-7/12 lg:w-4/12"
-                src="../assets/icon/สล็อตเกม.png"
+                src="../assets/icon/หวย.png"
                 alt="casino"
               />
-              <span class="text-white text-sm">คาสิโน</span>
+              <span class="text-white text-sm">หวย</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
@@ -197,17 +197,17 @@ import StickyBottom from "../components/User/StickyBottom.vue";
                 src="../assets/icon/สล็อตเกม.png"
                 alt="casino"
               />
-              <span class="text-white text-sm">คาสิโน</span>
+              <span class="text-white text-sm">สล็อตเกม</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"
             >
               <img
                 class="w-7/12 lg:w-4/12"
-                src="../assets/icon/สล็อตเกม.png"
+                src="../assets/icon/กีฬาคาสิโน.png"
                 alt="casino"
               />
-              <span class="text-white text-sm">คาสิโน</span>
+              <span class="text-white text-sm">กีฟาคาสิโน</span>
             </div>
             <div
               class="bg-gray-800 w-10/12 mb-4 py-3 rounded-xl flex flex-col items-center transition-all hover:bg-gray-700 duration-300 cursor-pointer"

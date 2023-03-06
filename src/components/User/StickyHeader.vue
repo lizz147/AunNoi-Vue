@@ -80,7 +80,8 @@
             v-show="isMenuDropDownVisible"
           >
             <div class="flex flex-col">
-              <div
+              <router-link to="/user/profile" class="text-black no-underline">
+                <div
                 class="flex flex-row cursor-pointer hover:text-blue-700 transiton-all duration-200 mb-2"
               >
                 <svg
@@ -104,6 +105,8 @@
                 </svg>
                 <span class="text-sm">ตั่งค่าผู้ใช้</span>
               </div>
+              </router-link>
+              <router-link to="/user/bankacount" class="text-black no-underline">
               <div
                 class="flex flex-row cursor-pointer hover:text-blue-700 transiton-all duration-200 mb-2"
               >
@@ -124,6 +127,8 @@
 
                 <span class="text-sm">บัญชีธนาคาร</span>
               </div>
+              </router-link>
+              <router-link to="/user/howtouse" class="text-black no-underline">
               <div
                 class="flex flex-row cursor-pointer hover:text-blue-700 transiton-all duration-200 mb-2"
               >
@@ -144,6 +149,7 @@
 
                 <span class="text-sm">วิธีใช้งาน</span>
               </div>
+              </router-link>
               <div
                 class="flex flex-row cursor-pointer hover:text-blue-700 transiton-all duration-200 mb-2"
               >

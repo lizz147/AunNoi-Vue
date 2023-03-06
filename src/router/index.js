@@ -12,7 +12,14 @@ import MoneyReportView from "../views/MoneyReportView.vue";
 import WithdrawView from "../views/WithdrawView.vue";
 import ReportAfView from "../views/ReportAfView.vue";
 import DepositView from "../views/DepositView.vue";
-
+import BankAcountView from "../views/BankAcountView.vue";
+import HowToUseView from "../views/HowToUseView.vue";
+import AddBankView from "../views/AddBankView.vue";
+import CheckStatusBankView from "../views/CheckStatusBankView.vue";
+import VictoryView from "../views/VictoryView.vue";
+import ThaiVictoryView from "../views/ThaiVictoryView.vue";
+import TgsVictoryView from "../views/TgsVictoryView.vue";
+import AomSinVictoryView from "../views/AomSinVictoryView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -80,6 +87,46 @@ const router = createRouter({
       path: "/user/deposit",
       name: "userdeposit",
       component: DepositView,
+    },
+    {
+      path: "/user/bankacount",
+      name: "userbankacount",
+      component: BankAcountView,
+    },
+    {
+      path: "/user/howtouse",
+      name: "userhowtouse",
+      component: HowToUseView,
+    },
+    {
+      path: "/user/bankacount/addbank",
+      name: "userbankacountaddbank",
+      component: AddBankView,
+    },
+    {
+      path: "/user/bankacount/checkbank",
+      name: "userbankacountcheckbank",
+      component: CheckStatusBankView,
+    },
+    {
+      path: "/victory",
+      name: "victory",
+      component: VictoryView,
+    },
+    {
+      path: "/victory/thai",
+      name: "victorythau",
+      component: ThaiVictoryView,
+    },
+    {
+      path: "/victory/aomsin",
+      name: "victoryaomsin",
+      component: AomSinVictoryView,
+    },
+    {
+      path: "/victory/gts",
+      name: "victorygts",
+      component: TgsVictoryView,
     },
   ],
 });

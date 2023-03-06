@@ -4,7 +4,7 @@
       <vue-tailwind-datepicker
         as-single
         placeholder="mm/dd/yyyy"
-        class="border-black"
+        class="border-gray-500"
       />
     </div>
   </div>
