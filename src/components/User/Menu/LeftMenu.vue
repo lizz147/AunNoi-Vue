@@ -33,7 +33,10 @@ export default {
           img: slot,
         },
         {
-          name: "กีฬาคาสิโน",
+          name: "คาสิโน",
+          img: casino,
+        },{
+          name: "กีฬา",
           img: casino,
         },
       ],
