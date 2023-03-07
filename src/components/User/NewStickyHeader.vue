@@ -17,10 +17,11 @@ import Contect from "./StickyHeader/Contect.vue";
 
   <div
     v-show="isShow"
-    class="w-full h-screen absolute z-50 top-0 flex flex-col justify-center items-center fade"
+    class="w-full h-screen fixed z-50 top-0 flex flex-col justify-center items-center fade"
+    style="background-color: rgba(0, 0, 0, 0.7);"
   >
     <div
-      class="w-11/12 h-fit md:w-6/12 bg-white sticky top-0 rounded-md flex flex-col"
+      class="w-11/12 h-fit md:w-6/12 bg-white rounded-md flex flex-col"
     >
       <div
         class="bg-white w-full h-fit flex flex-row justify-between p-2 px-3 py-3 border-b-2 border-blue-900 rounded-t-md"
