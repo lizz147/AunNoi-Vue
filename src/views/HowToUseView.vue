@@ -1,40 +1,37 @@
 <script setup>
-import StickyBottom from "../components/User/StickyBottom.vue";
-import StickyHeader from "../components/User/StickyHeader.vue";
+import NewStickyBottom from "../components/User/NewStickyBottom.vue";
+import NewStickyHeader from "../components/User/NewStickyHeader.vue";
 </script>
 
 <template>
-  <div class="min-h-screen h-auto w-full flex flex-col relative bg-gray-900">
-    <StickyHeader />
+  <div class="min-h-screen h-full" id="userMain">
+    <NewStickyHeader />
     <div
-      class="w-full bg-gray-900 flex flex-col justify-start items-center pt-8 pb-20"
+      id="layout"
+      class="w-full md:w-3/4 mx-auto mt-2 flex flex-col p-2 min-h-screen rounded-md"
     >
-      <div class="w-11/12 lg:w-1/2 bg-slate-100 rounded-md p-3 mb-6">
-        <div
-          class="flex flex-row justify-start items-center cursor-pointer mb-3"
+      <div class="bg-white px-3 rounded-lg">
+        <router-link
+          to="/user"
+          class="text-blue-500 no-underline hover:text-blue-700 transition-all duration-200 flex flex-row gap-1 my-2"
         >
-          <router-link
-            class="text-base hover:text-red-700 transition-all duration-200 no-underline text-gray-800 flex flex-row items-center"
-            to="/user"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-4 mt-0.5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
 
-            ย้อนกลับ
-          </router-link>
-        </div>
+          หน้าแรก
+        </router-link>
         <div class="bg-slate-200 shadow py-2 px-2 pt-3 rounded-md mb-3">
           <div class="flex flex-row items-center">
             <svg
@@ -51,11 +48,10 @@ import StickyHeader from "../components/User/StickyHeader.vue";
                 d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
               />
             </svg>
-
             <span class="font-semibold"> วิธีใช้งาน </span>
           </div>
         </div>
-        <div class="bg-slate-100 shadow-sm rounded-md py-2">
+        <div class="rounded-md py-2">
           <div class="flex flex-col">
             <div
               class="w-full flex flex-row justify-between items-center border border-gray-400 py-2 px-4 transition-all duration-300 hover:bg-blue-400 hover:text-white cursor-pointer hover:border-blue-500"
@@ -250,10 +246,9 @@ import StickyHeader from "../components/User/StickyHeader.vue";
         </div>
       </div>
     </div>
+    <NewStickyBottom />
   </div>
-  <StickyBottom />
 </template>
-
 <script>
 export default {
   data() {

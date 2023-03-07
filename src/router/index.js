@@ -20,6 +20,7 @@ import VictoryView from "../views/VictoryView.vue";
 import ThaiVictoryView from "../views/ThaiVictoryView.vue";
 import TgsVictoryView from "../views/TgsVictoryView.vue";
 import AomSinVictoryView from "../views/AomSinVictoryView.vue";
+import RaffleHuayView from "../views/RaffleHuayView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -127,6 +128,11 @@ const router = createRouter({
       path: "/victory/gts",
       name: "victorygts",
       component: TgsVictoryView,
+    },
+    {
+      path: "/raffle",
+      name: "rafflehuay",
+      component: RaffleHuayView,
     },
   ],
 });
