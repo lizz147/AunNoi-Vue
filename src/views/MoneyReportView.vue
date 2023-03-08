@@ -241,7 +241,8 @@ import NewStickyHeader from "../components/User/NewStickyHeader.vue";
   </div>
   <div
     v-show="isShow"
-    class="w-full h-screen absolute z-50 top-0 flex flex-col justify-center items-center fade shadow-xl"
+    class="w-full h-screen fixed z-50 top-0 flex flex-col justify-center items-center fade"
+    style="background-color: rgba(0, 0, 0, 0.7)"
   >
     <div
       class="w-11/12 h-fit md:w-6/12 bg-white shadow-xl rounded-md flex flex-col"

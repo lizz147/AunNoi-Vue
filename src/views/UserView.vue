@@ -5,8 +5,7 @@ import CircleMain from "../components/User/CircleMain.vue";
 import CircleSecond from "../components/User/CircleSecond.vue";
 import DepositButton from "../components/User/DepositButton.vue";
 import WithDrawButton from "../components/User/WithDrawButton.vue";
-import LeftMenu from "../components/User/Menu/LeftMenu.vue";
-import RightMenu from "../components/User/Menu/RightMenu.vue";
+import MenuView from "../components/User/Menu/Menu.vue"
 </script>
 
 <template>
@@ -14,7 +13,7 @@ import RightMenu from "../components/User/Menu/RightMenu.vue";
     <NewStickyHeader />
     <div
       id="layout"
-      class="w-full md:w-3/4 bg-white shadow-lg mx-auto mt-2 flex flex-col pt-2 lg:pt-4"
+      class="w-full md:w-3/4 bg-white shadow-lg mx-auto mt-2 flex flex-col pt-2 lg:pt-4 pb-3"
     >
       <div class="flex flex-row w-full justify-center">
         <CircleMain />
@@ -47,8 +46,7 @@ import RightMenu from "../components/User/Menu/RightMenu.vue";
         </router-link>
       </div>
       <div class="flex flex-row gap-0.5 px-0.5">
-        <LeftMenu />
-        <RightMenu />
+        <MenuView />
       </div>
     </div>
     <NewStickyBottom />
