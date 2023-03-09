@@ -11,7 +11,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-5 mb-1"
+          class="w-4 mb-1"
         >
           <path
             stroke-linecap="round"
@@ -20,6 +20,7 @@
           />
         </svg>
         <span class="text-[10px] lg:text-sm">รายได้เพื่อน AF</span>
+        <span class="text-[10px] lg:text-sm font-bold text-blue-700">1,000,000</span>
       </div>
     </div>
   </router-link>

@@ -9,7 +9,7 @@ import VueTailwindDatepicker from "vue-tailwind-datepicker";
 </script>
 <template>
   <StickyHeader />
-  <div class="container py-3 bg-slate-100">
+  <div class="container py-3 bg-slate-100 mb-10">
     <router-link
       to="/user"
       class="text-blue-500 no-underline hover:text-blue-700 transition-all duration-200 flex flex-row gap-1 my-2 px-1"

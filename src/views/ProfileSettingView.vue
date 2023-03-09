@@ -4,7 +4,7 @@ import NewStickyHeader from "../components/User/NewStickyHeader.vue";
 </script>
 
 <template>
-  <div class="min-h-screen h-full" id="userMain">
+  <div class="min-h-screen h-full pb-20" id="userMain">
     <NewStickyHeader />
     <div
       id="layout"

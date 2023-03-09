@@ -9,11 +9,11 @@ import MenuView from "../components/User/Menu/Menu.vue"
 </script>
 
 <template>
-  <div class="min-h-screen h-full" id="userMain">
+  <div class="min-h-screen h-full pb-10" id="userMain">
     <NewStickyHeader />
     <div
       id="layout"
-      class="w-full md:w-3/4 bg-white shadow-lg mx-auto mt-2 flex flex-col pt-2 lg:pt-4 pb-3"
+      class="w-full md:w-3/4  shadow-lg mx-auto mt-2 flex flex-col pt-2 lg:pt-4 pb-3"
     >
       <div class="flex flex-row w-full justify-center">
         <CircleMain />

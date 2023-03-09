@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sticky bottom-0 flex flex-row justify-center mt-5">
+  <div class="w-full fixed bottom-0 flex flex-row justify-center">
     <div
       class="w-11/12 md:w-3/4 flex flex-row justify-between lg:justify-around rounded-t-2xl px-1 py-2 relative h-auto"
     >

@@ -86,7 +86,7 @@
           ลืมรหัสผ่าน?</router-link
         >
       </div>
-      <div class="flex flex-row flex-nowrap justify-center w-full gap-3 mb-3">
+      <div class="grid grid-cols-2 justify-center w-full gap-2 mb-3">
         <router-link
           to="/register"
           target="_blank"

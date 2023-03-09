@@ -8,9 +8,9 @@ import NewStickyHeader from "../components/User/NewStickyHeader.vue";
     <NewStickyHeader />
     <div
       id="layout"
-      class="w-full md:w-3/4 mx-auto mt-2 flex flex-col p-2 min-h-screen rounded-md"
+      class="w-full md:w-3/4 mx-auto flex flex-col p-2 rounded-md"
     >
-      <div class="flex flex-col justify-center bg-white rounded-md mt-20">
+      <div class="flex flex-col justify-center bg-white rounded-md">
         <router-link
           to="/user"
           class="text-blue-500 no-underline hover:text-blue-700 transition-all duration-200 flex flex-row gap-1 mt-2 px-3"

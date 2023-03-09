@@ -8,7 +8,7 @@ import NewStickyHeader from "../components/User/NewStickyHeader.vue";
     <NewStickyHeader />
     <div
       id="layout"
-      class="w-full md:w-3/4  mx-auto mt-2 flex flex-col p-2 min-h-screen rounded-md"
+      class="w-full md:w-3/4  mx-auto mt-2 flex flex-col p-2 rounded-md"
     >
       <div class="bg-white px-3 rounded-lg">
         <router-link

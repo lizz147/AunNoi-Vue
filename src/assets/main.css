@@ -16,13 +16,21 @@
 }
 #main-circle,
 #second-circle {
-  background: rgba(0, 0, 0, -0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px rgba(209, 223, 21, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#Header {
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 #userMain {
-  background: url(../assets/blackbg.jpg) no-repeat center center fixed;
+  background: url(../assets/gbg.webp) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

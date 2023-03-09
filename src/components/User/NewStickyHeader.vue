@@ -4,7 +4,8 @@ import Contect from "./StickyHeader/Contect.vue";
 </script>
 <template>
   <div
-    class="sticky flex flex-row justify-around items-center top-0 py-2 bg-amber-500 z-40"
+    id="Header"
+    class="sticky w-full flex flex-row justify-around items-center top-0 py-2  z-40"
   >
     <router-link to="/">
       <img src="../../assets/small/logo.png" class="w-32 lg:w-52" />

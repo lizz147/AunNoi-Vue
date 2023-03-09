@@ -10,13 +10,13 @@ function copyAccountNumberClick() {
 </script>
 
 <template>
-  <div class="min-h-screen h-full" id="userMain">
+  <div class="min-h-screen h-full pb-2" id="userMain">
     <NewStickyHeader />
     <div
       id="layout"
-      class="w-full md:w-3/4 mx-auto mt-2 flex flex-col p-2 min-h-screen rounded-md"
+      class="w-full md:w-3/4 mx-auto flex flex-col p-2 min-h-screen rounded-md"
     >
-      <div class="flex flex-col mt-3 bg-white rounded-md px-3">
+      <div class="flex flex-col bg-white rounded-md px-3">
         <router-link
           to="/user"
           class="text-blue-500 no-underline hover:text-blue-700 transition-all duration-200 flex flex-row gap-1 my-2 px-1"
