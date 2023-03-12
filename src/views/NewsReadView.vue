@@ -7,7 +7,7 @@ import Menu from "../components/Home/Menu.vue";
   <Menu />
   <div class="container">
     <div class="mb-3">
-      <img src="../assets/carousel/s1.png" alt="" />
+      <img src="../assets/carousel/s1.webp" alt="" />
     </div>
     <div class="mb-3">
       <h4>เว็บ แทง หวย มาแรง ทำเงินได้ชิวๆ ตลอดคืน</h4>

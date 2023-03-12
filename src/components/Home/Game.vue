@@ -98,7 +98,8 @@ export default {
         <img
           :src="item.img"
           alt="game"
-          class="rounded-xl rounded-b-none lg:w-[250px] lg:h-[140px]"
+          class="rounded-xl rounded-b-none"
+          width="1600" height="900"
         />
         <p class="text-white py-0.5">{{ item.name }}</p>
       </swiper-slide>

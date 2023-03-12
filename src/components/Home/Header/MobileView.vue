@@ -3,10 +3,10 @@
     <div class="flex flex-col items-center mt-5">
       <div class="mb-6">
         <img
-          src="../../../assets/small/logo.png"
+          src="../../../assets/small/logo.webp"
           alt="logo"
           width="150"
-          height="150"
+          height="100"
         />
       </div>
       <form action="#" class="w-full">
@@ -121,7 +121,7 @@
       >
         <img
           class="mr-2"
-          src="../../../assets/small/LINE_logo.svg.png"
+          src="../../../assets/small/line.webp"
           alt="Line Login"
           width="25"
           height="25"

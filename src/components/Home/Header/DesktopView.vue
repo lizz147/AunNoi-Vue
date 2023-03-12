@@ -3,10 +3,10 @@
     <div class="flex flex-row items-center gap-7 py-7">
       <div class="flex-none">
         <img
-          src="../../../assets/small/logo.png"
+          src="../../../assets/small/logo.webp"
           alt="logo"
-          width="250"
-          height="150"
+          width="150"
+          height="100"
         />
       </div>
       <div class="grow">
@@ -98,7 +98,7 @@
             >
               <img
                 class="mr-2"
-                src="../../../assets/small/LINE_logo.svg.png"
+                src="../../../assets/small/line.webp"
                 alt="Line Login"
                 width="25"
                 height="25"

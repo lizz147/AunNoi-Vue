@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-orange-500 py-5">
+  <div class="bg-gray-900 py-5">
     <ul class="flex flex-row justify-center">
       <li class="text-xs lg:text-base mx-2" v-for="item in items">
         <router-link

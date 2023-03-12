@@ -1,5 +1,5 @@
 <script setup>
-import thaiImg from "../../../assets/lotto/thai.png";
+import thaiImg from "../../../assets/thaiwallpaper.webp";
 </script>
 <template>
   <div class="w-full flex flex-col items-center py-4 lg:py-10">
@@ -95,26 +95,27 @@ import thaiImg from "../../../assets/lotto/thai.png";
       >
         TOP LOTTO
       </h2>
-      <p class="text-center text-lg mb-3 text-red-500 font-semibold">
+      <p class="text-center text-lg mb-3 text-black font-semibold">
         หวยเด่นยอดนิยม
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full">
         <div
-          class="flex flex-col items-center bg-red-500 hover:bg-red-600 transiton-all duration-200 cursor-pointer rounded-xl relative"
+          class="flex flex-col items-center bg-red-900 hover:bg-red-800 transiton-all duration-200 cursor-pointer rounded-xl relative"
           v-for="item in items"
         >
           <img
-            class="rounded-xl rounded-b-none h-72 md:h-60"
+            class="rounded-xl rounded-b-none"
+            width="1600" height="900"
             :src="item.image"
             alt="thai"
           />
           <p class="py-1 text-white">{{ item.name }}</p>
 
           <div
-            class="absolute bottom-12 bg-slate-200 w-11/12 rounded-xl flex flex-col items-center py-2"
+            class="absolute bottom-12 bg-white w-11/12 rounded-xl flex flex-col items-center py-2"
           >
-            <p class="text-xs mb-1">งวดวันที่ 09/01/66 เหลือเวลา</p>
-            <div class="flex flex-row items-center text-green-500">
+            <p class="text-xs mb-1 text-black font-bold">งวดวันที่ 09/01/66 เหลือเวลา</p>
+            <div class="flex flex-row items-center text-green-900">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -129,7 +130,7 @@ import thaiImg from "../../../assets/lotto/thai.png";
                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <p class="text-green-500 font-bold">14:31:45</p>
+              <p class="text-green-900 font-bold">14:31:45</p>
             </div>
           </div>
         </div>

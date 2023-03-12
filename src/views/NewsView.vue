@@ -14,7 +14,7 @@ import Menu from "../components/Home/Menu.vue";
       >
         <img
           class="h-56 object-cover rounded-xl rounded-b-none"
-          src="../assets/carousel/s1.png"
+          src="../assets/carousel/s1.webp"
           alt="cover"
         />
         <div class="flex flex-col items-start flex-wrap p-6 pt-3 pb-12">

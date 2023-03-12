@@ -11,13 +11,13 @@
     style="user-select: none"
   >
     <swiper-slide
-      ><img src="../../assets/carousel/s1.png" alt="carousel-1"
+      ><img src="../../assets/carousel/s1.webp" alt="carousel-1" width="1600" height="900"
     /></swiper-slide>
     <swiper-slide
-      ><img src="../../assets/carousel/s2.png" alt="carousel-2"
+      ><img src="../../assets/carousel/s2.webp" alt="carousel-2" width="1600" height="900"
     /></swiper-slide>
     <swiper-slide
-      ><img src="../../assets/carousel/s3.png" alt="carousel-3"
+      ><img src="../../assets/carousel/s3.webp" alt="carousel-3" width="1600" height="900"
     /></swiper-slide>
   </swiper>
 </template>

@@ -8,7 +8,7 @@ import Contect from "./StickyHeader/Contect.vue";
     class="sticky w-full flex flex-row justify-around items-center top-0 py-2  z-40"
   >
     <router-link to="/">
-      <img src="../../assets/small/logo.png" class="w-32 lg:w-52" />
+      <img src="../../assets/small/logo.webp" class="w-32 lg:w-52" />
     </router-link>
     <div class="flex flex-row items-center gap-1">
       <UserStatus />
@@ -51,7 +51,7 @@ import Contect from "./StickyHeader/Contect.vue";
         >
           <img
             class="w-7"
-            src="../../assets/small/LINE_logo.svg.png"
+            src="../../assets/small/line.webp"
             alt="LINE"
           />
           <span class="text-green-700 group-hover:text-white"

@@ -1,6 +1,5 @@
 <script setup>
 import BottomButton from "../components/Register/BottomButton.vue";
-import { VueReCaptcha } from "vue-recaptcha-v3";
 </script>
 <template>
   <div class="h-screen flex flex-col justify-between">
@@ -72,12 +71,6 @@ import { VueReCaptcha } from "vue-recaptcha-v3";
               placeholder="กรอกหมายเลขโทรศัพท์"
               class="text-center w-3/4 py-2 focus:outline-none focus:border-blue-700 border border-gray-800"
             />
-          </div>
-          <div class="mb-4 w-full flex flex-row justify-center">
-            <div
-              class="g-recaptcha w-full flex flex-row justify-center"
-              data-sitekey="6LeeUK0kAAAAALADGcsAki66hlTP0Abi9VSUj87e"
-            ></div>
           </div>
           <div class="mb-4 w-full flex flex-row justify-center">
             <button
@@ -336,10 +329,6 @@ export default {
           this.countDownTimer();
         }, 1000);
       }
-    },
-    async recaptcha() {
-      await this.$recaptchaLoaded();
-      const token = await this.$recaptcha("login");
     },
   },
 };

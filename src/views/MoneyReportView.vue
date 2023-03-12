@@ -272,7 +272,7 @@ import NewStickyHeader from "../components/User/NewStickyHeader.vue";
           to="#"
           class="flex flex-row items-center border-2 border-emerald-600 rounded-lg py-2 justify-center gap-1 hover:bg-emerald-600 transition-all duration-200 cursor-pointer group no-underline"
         >
-          <img class="w-7" src="../assets/small/LINE_logo.svg.png" alt="LINE" />
+          <img class="w-7" src="../assets/small/line.webp" alt="LINE" />
           <span class="text-green-700 group-hover:text-white"
             >ติดต่อผ่านไลท์</span
           >
